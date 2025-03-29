@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import DefaultLayout from "@/layouts/DefaultLayout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,29 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div id="wrapper">
-          <header
-            id="header"
-            className="w-full z-30 absolute bg-cover bg-center transition-all duration-300"
-          >
-            <div className="header-wrapper">
-              <div className="max-w-[1680px] mx-auto h-86 flex justify-between pt-4 pr-6 pb-4 pl-6">
-                <Link href={"/"}>
-                  <Image
-                    src="/brands/Logo.svg"
-                    alt="Logo"
-                    width={113}
-                    height={54}
-                  />
-                </Link>
-              </div>
-            </div>
-          </header>
-          <main id="main">
-            <div id="content">{children}</div>
-          </main>
-          <footer id="footer"></footer>
-        </div>
+        <DefaultLayout>{children}</DefaultLayout>
       </body>
     </html>
   );

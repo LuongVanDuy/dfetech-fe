@@ -4,9 +4,9 @@ import Home2 from "@/modules/home/Home2";
 
 export default function Home() {
   return (
-    <DefaultLayout>
+    <>
       <Home1 />
       <Home2 />
-    </DefaultLayout>
+    </>
   );
 }
