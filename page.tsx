@@ -1,12 +1,11 @@
 import DefaultLayout from "@/layouts/DefaultLayout";
-import Home1 from "@/modules/home/Home1";
-import Home2 from "@/modules/home/Home2";
+
+import HomePage from "@/modules/home";
 
 export default function Home() {
   return (
     <DefaultLayout>
-      <Home1 />
-      <Home2 />
+      <HomePage />
     </DefaultLayout>
   );
 }
