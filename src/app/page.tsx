@@ -45,12 +45,12 @@ export default function Home() {
                 <span className="text-[#fff] text-[60px]">01</span>
                 <p className="text-[#ADB5BD]">Introduction to LS-DYNA®</p>
               </div>
-              <div className="flex items-center px-[45px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
+              {/* <div className="flex items-center px-[45px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
                 <span className="text-[#fff] text-[60px]">02</span>
                 <p className="text-[#ADB5BD]">
                   Introduction Analysis in LS-DYNA®
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -217,7 +217,7 @@ export default function Home() {
                           width={215}
                           height={150}
                           alt="Picture of the author"
-                          className="w-[full] cursor-pointer"
+                          className="w-[100%] cursor-pointer"
                         />
                       </div>
                       <div className=" text-white lg:col-span-6 flex flex-col justify-between">
@@ -310,9 +310,19 @@ export default function Home() {
 
       <section className="touch-section min-h-[600px] lg:px-[120px] sm:px-[10px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-[45px]">
-          <div className=" text-white text-center"></div>
+          <div className=" text-white lg:none sm:block text-center">
+            <Image
+              src="/home/academy.png"
+              width={215}
+              height={150}
+              alt="Picture of the author"
+              className="w-[100%] cursor-pointer"
+            />
+          </div>
           <div className=" p-4 text-white text-start">
-            <h3 className="text-[48px] text-[#fff]">Get in touch with us</h3>
+            <h3 className=" sm:text-[32px] lg:text-[48px] text-[#fff]">
+              Get in touch with us
+            </h3>
             <p className="text-[#ADB5BD]">
               Drop us a note - we look forward to hearing from you
             </p>
