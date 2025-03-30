@@ -1,11 +1,6 @@
 import DefaultLayout from "@/layouts/DefaultLayout";
-
-import HomePage from "@/modules/home";
+// import HomePage from "@/modules/home";
 
 export default function Home() {
-  return (
-    <DefaultLayout>
-      <HomePage />
-    </DefaultLayout>
-  );
+  return <DefaultLayout>{/* <HomePage />  */}</DefaultLayout>;
 }
