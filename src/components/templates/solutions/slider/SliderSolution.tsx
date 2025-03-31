@@ -36,6 +36,14 @@ const SliderSolution = () => {
               imageUrl="/home/Solution-2.png"
               height="103.67%"
               effect="zoom"
+              title="UBECO"
+              link={[
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+              ]}
             />
           </SwiperSlide>
         ))}
