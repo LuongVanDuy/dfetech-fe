@@ -1,6 +1,9 @@
 import CustomButton from "@/components/CustomButton";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
+import { DateIcon } from "@/Icons/DateIcon";
+import { MoreIcon } from "@/Icons/MoreIcon";
+import { TimeIcon } from "@/Icons/TimeIcon";
 import Image from "next/image";
 
 export default function Home2() {
@@ -90,13 +93,7 @@ export default function Home2() {
                       <h2 className="text-lg font-semibold mt-1">
                         PROFIL Version 6.4 is Released!
                       </h2>
-                      <Image
-                        src="/home/more.svg"
-                        width={12}
-                        height={12}
-                        alt="More"
-                        className="cursor-pointer"
-                      />
+                      <MoreIcon className="cursor-pointer" />
                     </div>
                     <p className="text-gray-600 text-sm mt-2 line-clamp-2">
                       Retaining ring notches, shoulders, chamfers, fillets: The
@@ -119,13 +116,7 @@ export default function Home2() {
                       <h2 className="text-lg font-semibold mt-1">
                         PROFIL Version 6.4 is Released!
                       </h2>
-                      <Image
-                        src="/home/more.svg"
-                        width={12}
-                        height={12}
-                        alt="More"
-                        className="cursor-pointer"
-                      />
+                      <MoreIcon className="cursor-pointer" />
                     </div>
                     <p className="text-gray-600 text-sm mt-2 line-clamp-2">
                       Retaining ring notches, shoulders, chamfers, fillets: The
@@ -148,13 +139,7 @@ export default function Home2() {
                       <h2 className="text-lg font-semibold mt-1">
                         PROFIL Version 6.4 is Released!
                       </h2>
-                      <Image
-                        src="/home/more.svg"
-                        width={12}
-                        height={12}
-                        alt="More"
-                        className="cursor-pointer"
-                      />
+                      <MoreIcon className="cursor-pointer" />
                     </div>
                     <p className="text-gray-600 text-sm mt-2 line-clamp-2">
                       Retaining ring notches, shoulders, chamfers, fillets: The
@@ -171,12 +156,7 @@ export default function Home2() {
               <article className=" md:p-[45px] sm:p-[10px]  border-r-[1px]">
                 <div className="flex justify-between items-center mb-[30px]">
                   <h1 className="text-[40px] ">Academy</h1>
-                  <Image
-                    src="/home/more_large.svg"
-                    width={20}
-                    height={20}
-                    alt="Picture of the author"
-                  />
+                  <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
                 <div>
                   <Image
@@ -192,13 +172,7 @@ export default function Home2() {
                     <h2 className="text-lg font-semibold mt-1">
                       PROFIL Version 6.4 is Released!
                     </h2>
-                    <Image
-                      src="/home/more.svg"
-                      width={12}
-                      height={12}
-                      alt="More"
-                      className="cursor-pointer"
-                    />
+                    <MoreIcon className="cursor-pointer" />
                   </div>
                   <p className="text-gray-600 text-sm mt-2">
                     Retaining ring notches, shoulders, chamfers, fillets: The
@@ -210,12 +184,7 @@ export default function Home2() {
               <article className="md:p-[45px] sm:p-[10px]">
                 <div className="flex justify-between items-center mb-[30px]">
                   <h1 className="text-[40px]">Events</h1>
-                  <Image
-                    src="/home/more_large.svg"
-                    width={20}
-                    height={20}
-                    alt="Picture of the author"
-                  />
+                  <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
                 <div className="flex flex-col gap-[40px]">
                   <div className="grid grid-cols-1 lg:grid-cols-10 gap-4">
@@ -239,39 +208,13 @@ export default function Home2() {
                       <div className="flex justify-between">
                         <div className=" text-gray-700">
                           <div className="flex items-center space-x-2">
-                            <svg
-                              className="w-5 h-5 text-gray-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                              />
-                            </svg>
+                            <TimeIcon className="w-5 h-5 text-gray-500" />
                             <span className="text-[14px] text-[#495057] ">
                               3:00 PM - 4:00 PM
                             </span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <svg
-                              className="w-5 h-5 text-gray-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 4h10M5 10h14a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7a2 2 0 012-2z"
-                              />
-                            </svg>
+                            <DateIcon className="w-5 h-5 text-gray-500" />
                             <span className="text-[14px] text-[#495057] ">
                               Dec 19 2024
                             </span>
@@ -307,39 +250,13 @@ export default function Home2() {
                       <div className="flex justify-between">
                         <div className=" text-gray-700">
                           <div className="flex items-center space-x-2">
-                            <svg
-                              className="w-5 h-5 text-gray-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                              />
-                            </svg>
+                            <TimeIcon className="w-5 h-5 text-gray-500" />
                             <span className="text-[14px] text-[#495057] ">
                               3:00 PM - 4:00 PM
                             </span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <svg
-                              className="w-5 h-5 text-gray-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 4h10M5 10h14a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7a2 2 0 012-2z"
-                              />
-                            </svg>
+                            <DateIcon className="w-5 h-5 text-gray-500" />
                             <span className="text-[14px] text-[#495057] ">
                               Dec 19 2024
                             </span>
@@ -375,39 +292,13 @@ export default function Home2() {
                       <div className="flex justify-between">
                         <div className=" text-gray-700">
                           <div className="flex items-center space-x-2">
-                            <svg
-                              className="w-5 h-5 text-gray-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                              />
-                            </svg>
+                            <TimeIcon className="w-5 h-5 text-gray-500" />
                             <span className="text-[14px] text-[#495057] ">
                               3:00 PM - 4:00 PM
                             </span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <svg
-                              className="w-5 h-5 text-gray-500"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 4h10M5 10h14a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7a2 2 0 012-2z"
-                              />
-                            </svg>
+                            <DateIcon className="w-5 h-5 text-gray-500" />
                             <span className="text-[14px] text-[#495057] ">
                               Dec 19 2024
                             </span>

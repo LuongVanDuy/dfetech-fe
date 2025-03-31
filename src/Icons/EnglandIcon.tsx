@@ -14,7 +14,7 @@ export const EnglandIcon: React.FC<Props> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_1424_11282)">
+      <g clipPath="url(#clip0_1424_11282)">
         <path
           d="M15 27C21.6274 27 27 21.6274 27 15C27 8.37258 21.6274 3 15 3C8.37258 3 3 8.37258 3 15C3 21.6274 8.37258 27 15 27Z"
           fill="#F0F0F0"

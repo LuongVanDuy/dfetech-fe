@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const MenuIcon: React.FC<Props> = ({ className }) => {
+const MenuIcon: React.FC<Props> = ({ className = "" }) => {
   return (
     <svg
       width="24"
@@ -17,10 +17,12 @@ export const MenuIcon: React.FC<Props> = ({ className }) => {
       <path
         d="M3 12H21M3 6H21M3 18H21"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
     </svg>
   );
 };
+
+export { MenuIcon };

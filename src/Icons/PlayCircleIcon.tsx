@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const PlayCircleIcon: React.FC<Props> = ({ className }) => {
+const PlayCircleIcon: React.FC<Props> = ({ className = "" }) => {
   return (
     <svg
       width="32"
@@ -31,3 +31,5 @@ export const PlayCircleIcon: React.FC<Props> = ({ className }) => {
     </svg>
   );
 };
+
+export { PlayCircleIcon };

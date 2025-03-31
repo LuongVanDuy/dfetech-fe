@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const LayerIcon: React.FC<Props> = ({ className }) => {
+const LayerIcon: React.FC<Props> = ({ className = "" }) => {
   return (
     <svg
       width="40"
@@ -24,3 +24,5 @@ export const LayerIcon: React.FC<Props> = ({ className }) => {
     </svg>
   );
 };
+
+export { LayerIcon };

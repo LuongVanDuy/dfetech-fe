@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const ChevronRightIcon: React.FC<Props> = ({ className }) => {
+function ChevronRightIcon({ className = "" }: Props) {
   return (
     <svg
       width="24"
@@ -23,4 +23,6 @@ export const ChevronRightIcon: React.FC<Props> = ({ className }) => {
       />
     </svg>
   );
-};
+}
+
+export { ChevronRightIcon };

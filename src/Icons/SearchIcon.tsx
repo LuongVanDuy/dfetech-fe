@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const SearchIcon: React.FC<Props> = ({ className }) => {
+const SearchIcon: React.FC<Props> = ({ className = "" }) => {
   return (
     <svg
       width="20"
@@ -21,3 +21,5 @@ export const SearchIcon: React.FC<Props> = ({ className }) => {
     </svg>
   );
 };
+
+export { SearchIcon };

@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export const HelpCircleIcon: React.FC<Props> = ({ className }) => {
+const HelpCircleIcon: React.FC<Props> = ({ className = "" }) => {
   return (
     <svg
       width="32"
@@ -24,3 +24,5 @@ export const HelpCircleIcon: React.FC<Props> = ({ className }) => {
     </svg>
   );
 };
+
+export { HelpCircleIcon };

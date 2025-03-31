@@ -30,7 +30,6 @@ export default function Home1() {
             src="/home/home-background.jpg"
             width={1920}
             height={1302}
-            objectFit="cover"
             alt="Home Background"
           />
           <div className="absolute top-0 left-0 w-full h-full mix-blend-lighten">
@@ -38,7 +37,6 @@ export default function Home1() {
               src="/home/body-background.png"
               width={1920}
               height={1302}
-              objectFit="cover"
               className="h-full"
               alt="Body Background"
             />
@@ -69,6 +67,7 @@ export default function Home1() {
                     width={133}
                     height={67}
                     alt="brand"
+                    style={{ height: "auto" }}
                   />
                   <Image
                     src={"/brands/vinfast.png"}
@@ -243,9 +242,9 @@ export default function Home1() {
               <Image
                 src="/home/shuttersock-1.jpeg"
                 alt="Sheet Stamping Engineering"
-                layout="fill"
-                objectFit="cover"
                 className="opacity-60"
+                style={{ objectFit: "cover" }}
+                fill
               />
               <div className="absolute bottom-10 left-10 flex flex-col gap-2 z-10">
                 <CustomButton type="icon" className="p-3">
@@ -259,9 +258,9 @@ export default function Home1() {
               <Image
                 src="/home/shuttersock-2.jpeg"
                 alt="Sheet Stamping Engineering"
-                layout="fill"
-                objectFit="cover"
                 className="opacity-60"
+                style={{ objectFit: "cover" }}
+                fill
               />
               <div className="absolute bottom-10 left-10 flex flex-col gap-2 z-10">
                 <CustomButton type="icon" className="p-3">
