@@ -143,7 +143,7 @@ export default function Home2() {
               </div>
               <CustomButton
                 type="primary"
-                className="!font-thin md:hidden sm:block"
+                className="!font-thin min-w-[30px] !text-[14px] !py-[8px] !px-[20px]  md:hidden sm:block"
               >
                 See all →
               </CustomButton>
@@ -162,6 +162,7 @@ export default function Home2() {
                     width={550}
                     height={450}
                     alt="Picture of the author"
+                    className="w-[100%]"
                   />
                 </div>
                 <div className="py-4">
@@ -274,6 +275,7 @@ export default function Home2() {
                peer-invalid:border-red-500"
                   />
                   <label
+                    htmlFor="first_name"
                     className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
                peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
                peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
