@@ -1,4 +1,5 @@
 import CustomButton from "@/components/CustomButton";
+import SliderSolution from "@/components/templates/solutions/slider/SliderSolution";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
 import { DegressIcon } from "@/Icons/DegressIcon";
@@ -145,47 +146,7 @@ export default function Home1() {
           <CustomButton className="hidden md:block">See all →</CustomButton>
         </div>
 
-        <div className="flex">
-          <div>
-            <Image
-              src={"/home/Solution-2.png"}
-              width={600}
-              height={622}
-              alt="Solution"
-            />
-          </div>
-
-          <div className="hidden md:block">
-            <Image
-              src={"/home/Solution-1.png"}
-              width={600}
-              height={622}
-              alt="Solution"
-            />
-          </div>
-
-          <div className="hidden md:block">
-            <Image
-              src={"/home/Solution-3.png"}
-              width={600}
-              height={622}
-              alt="Solution"
-            />
-          </div>
-        </div>
-
-        <div className="flex justify-between md:justify-center items-center py-5">
-          <div className="flex gap-2">
-            <CustomButton type="icon">
-              <ChevronLeftIcon />
-            </CustomButton>
-            <CustomButton type="icon">
-              <ChevronRightIcon />
-            </CustomButton>
-          </div>
-
-          <CustomButton className="block md:hidden">See all →</CustomButton>
-        </div>
+        <SliderSolution />
 
         <div className="bg-[#0B0E1566] py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-white mx-16">
