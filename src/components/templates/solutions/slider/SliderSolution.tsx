@@ -8,6 +8,7 @@ import BoxImage from "@/components/images/BoxImage";
 import CustomButton from "@/components/CustomButton";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
+import BoxSolution from "../loop/BoxSolution";
 
 const SliderSolution = () => {
   const swiperRef = useRef<any>(null);
@@ -32,10 +33,18 @@ const SliderSolution = () => {
       >
         {[...Array(4)].map((_, index) => (
           <SwiperSlide key={index}>
-            <BoxImage
+            <BoxSolution
               imageUrl="/home/Solution-2.png"
               height="103.67%"
               effect="zoom"
+              title="UBECO"
+              link={[
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+                { name: "LS-DYNA", href: "ly-dyna" },
+              ]}
             />
           </SwiperSlide>
         ))}
