@@ -35,3 +35,27 @@ html {
   background-size: cover;
   width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+  .touch-section {
+    background-position: 65% 80%;
+  }
+}
+
+.background-trusted {
+  background: linear-gradient(
+      186deg,
+      rgba(130, 255, 226, 0.01),
+      rgba(130, 470, 226, 0.05)
+    ),
+    linear-gradient(
+      204deg,
+      rgba(243, 238, 255, 0) 0%,
+      rgba(243, 238, 255, 0.04) 100%
+    ),
+    radial-gradient(
+      110.94% 200.94% at 50% -5%,
+      #48ca96 -16%,
+      rgba(41, 128, 103, 0) 25.24%
+    );
+}

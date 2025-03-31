@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <div className="fixed z-50 w-full bg-[#0B0E1566] ">
-      <div className="flex justify-between xl:justify-around p-5">
+      <div className="flex justify-between xl:justify-around p-4">
         <div className="flex items-center gap-5">
           <MenuIcon className="block xl:hidden" />
           <div>

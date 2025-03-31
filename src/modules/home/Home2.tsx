@@ -3,7 +3,9 @@ import BoxNormal from "@/components/templates/posts/loop/BoxNormal";
 import BoxVertical from "@/components/templates/posts/loop/BoxVertical";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
+import { DateIcon } from "@/Icons/DateIcon";
 import { MoreIcon } from "@/Icons/MoreIcon";
+import { TimeIcon } from "@/Icons/TimeIcon";
 import Image from "next/image";
 
 const newsData = [
@@ -60,8 +62,8 @@ export default function Home2() {
     <>
       <section className="bg-[#000] ">
         <div className="lg:px-[120px] ">
-          <div className="grid grid-cols-1 md:grid-cols-10 ">
-            <div className="md:col-span-6  text-white  rounded-lg">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-10">
+            <div className="md:col-span-6  rounded-lg">
               <div className="md:p-[45px] sm:p-[20px]">
                 <h1 className="text-[#fff] md:text-[45px] sm:text-[35px] leading-[55px] my-5">
                   Training & Workshop
@@ -70,7 +72,7 @@ export default function Home2() {
                   DFETECH offers on a variety of training courses. Training
                   courses are conducted by our team of application experts and
                   doctorate holders with application and industrial professional
-                  experience
+                  experience.
                 </p>
 
                 <CustomButton
@@ -79,13 +81,20 @@ export default function Home2() {
                 >
                   Booking Now
                 </CustomButton>
+
                 <div className="flex my-3 justify-between items-center">
                   <span className="text-[#ADB5BD]">Training courses:</span>
-                  <div className="flex items-center">
-                    <CustomButton type="icon">
+                  <div className="flex items-center gap-3">
+                    <CustomButton
+                      type="icon"
+                      className="!shadow-[0px_0px_10px_rgba(255,255,255,0.3)]"
+                    >
                       <ChevronLeftIcon />
                     </CustomButton>
-                    <CustomButton type="icon">
+                    <CustomButton
+                      type="icon"
+                      className="!shadow-[0px_0px_10px_rgba(255,255,255,0.3)]"
+                    >
                       <ChevronRightIcon />
                     </CustomButton>
                   </div>
@@ -100,12 +109,12 @@ export default function Home2() {
               </div>
             </div>
 
-            <div className="md:col-span-4  text-white  rounded-lg">
+            <div className="md:col-span-4 text-white rounded-lg">
               <Image
                 src="/home/workshop.png"
                 width={500}
                 height={500}
-                alt="Picture of the author"
+                alt="Workshop Image"
                 className="cursor-pointer w-[100%] h-[100%] object-cover"
               />
             </div>
@@ -113,12 +122,12 @@ export default function Home2() {
         </div>
       </section>
 
-      <div className="md:px-[120px]  ">
-        <div className="border-[1px]">
+      <div className="md:px-[120px] pb-[30px]">
+        <div className="md:border-[1px] sm:border-none">
           <section>
-            <div className="md:p-[45px] sm:px-[10px]">
-              <div className="flex justify-between">
-                <h1 className="text-[40px] mb-[30px]">News</h1>
+            <div className="md:p-[45px] sm:px-[10px] mb-5">
+              <div className="flex justify-between items-center">
+                <h1 className="text-[40px] leading-[48px] my-[30px]">News</h1>
                 <CustomButton
                   type="primary"
                   className="!font-thin md:block sm:hidden"
@@ -127,27 +136,48 @@ export default function Home2() {
                 </CustomButton>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-[48px]">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-[48px] mb-3">
                 {newsData.map((news, index) => (
                   <BoxNormal key={index} {...news} />
                 ))}
               </div>
+              <CustomButton
+                type="primary"
+                className="!font-thin md:hidden sm:block"
+              >
+                See all →
+              </CustomButton>
             </div>
           </section>
           <section className="border-t-[1px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <article className=" md:p-[45px] sm:p-[10px]  border-r-[1px]">
-                <div className="flex justify-between items-center mb-[30px]">
-                  <h1 className="text-[40px] ">Academy</h1>
+                <div className="flex justify-between items-center  mb-[30px]">
+                  <h1 className="md:text-[40px] sm:text-[32px] ">Academy</h1>
                   <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
-                <BoxNormal
-                  title="Ansys Academic"
-                  date="Academy"
-                  imageSrc="/home/academy.png"
-                  description="Utilized by Students, Educators and Researchers Across the World. The demand for graduates with engineering simulation skills is exploding. This is largely due to the widespread use of simulation across product development and optimization workflows."
-                  type="large"
-                />
+                <div>
+                  <Image
+                    src="/home/academy.png"
+                    width={550}
+                    height={450}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="py-4">
+                  <p className="text-sm text-green-600">19 Jan 2022</p>
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-[24px] leding-[28px] font-[400] mt-1">
+                      Ansys Academic
+                    </h2>
+                    <MoreIcon className="cursor-pointer" />
+                  </div>
+                  <p className="text-gray-600 text-sm mt-2">
+                    Retaining ring notches, shoulders, chamfers, fillets: The
+                    bore hole details are shown and exported in the drawing area
+                    on th...
+                  </p>
+                </div>
               </article>
               <article className="md:p-[45px] sm:p-[10px]">
                 <div className="flex justify-between items-center mb-[30px]">
@@ -166,22 +196,22 @@ export default function Home2() {
       </div>
 
       <section className="bg-[#0B0E15]">
-        <div className="lg:px-[120px] sm:px-[10px]">
-          <div className="p-[45px]">
-            <h3 className="text-center text-[32px] text-[#ADB5BD] mb-[30px]">
+        <div className="lg:px-[120px]">
+          <div className="md:p-[45px] py-[45px] px-[15px]">
+            <h3 className="text-center lg:text-[32px] sm:text-[29px] text-[#ADB5BD] mb-[30px]">
               We are Trusted 15+ Countries Worldwide
             </h3>
-            <div className="grid  grid-cols-3 gap-8 ">
-              <div className="p-4 text-white text-center rounded-lg border-[1px] bg-gradient-radial from-green-500/80 to-green-900">
-                <h2 className="text-[38px] font-bold">100+</h2>
+            <div className="grid  grid-cols-3 md:gap-8 sm:gap-1">
+              <div className="p-4 background-trusted  text-center rounded-lg bg-gradient-radial from-green-500/80 to-green-900">
+                <h2 className="text-[38px] text-white font-bold">100+</h2>
                 <p className="text-[#ADB5BD]">Clients</p>
               </div>
-              <div className=" p-4 text-white text-center rounded-lg border-[1px]">
-                <h2 className="text-[38px] font-bold">100+</h2>
+              <div className=" p-4 background-trusted  text-center rounded-lg ">
+                <h2 className="text-[38px] font-bold text-white">100+</h2>
                 <p className="text-[#ADB5BD]">Projects</p>
               </div>
-              <div className=" p-4 text-white text-center rounded-lg border-[1px]">
-                <h2 className="text-[38px] font-bold">50</h2>
+              <div className=" p-4 background-trusted  text-center rounded-lg ">
+                <h2 className="text-[38px] font-bold text-white">50</h2>
                 <p className="text-[#ADB5BD]">Years</p>
               </div>
             </div>
@@ -189,18 +219,18 @@ export default function Home2() {
         </div>
       </section>
 
-      <section className="touch-section min-h-[600px] lg:px-[120px] sm:px-[10px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-[45px]">
-          <div className=" text-white  text-center">
+      <section className="touch-section min-h-[600px] lg:px-[120px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="text-center">
             <Image
-              src="/home/touch.jpg"
+              src="/home/touch-mobile.png"
               width={215}
-              height={150}
+              height={440}
               alt="Picture of the author"
               className="w-[100%] cursor-pointer lg:hidden md:block"
             />
           </div>
-          <div className="p-4 text-white text-start">
+          <div className="p-4 mb-[20px] text-start">
             <h3 className=" sm:text-[32px] lg:text-[48px] text-[#fff]">
               Get in touch with us
             </h3>
@@ -329,10 +359,10 @@ export default function Home2() {
                 </div>
                 <div className="relative flex-1">
                   <select
-                    title="country"
-                    aria-label="country"
+                    title="job"
+                    aria-label="job"
                     required
-                    className="w-full border-b border-[#333333] pb-1 bg-[#000] pt-4 outline-none peer text-white
+                    className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
                peer-invalid:border-red-500 appearance-none"
                   >
                     <option value=""></option>
@@ -352,10 +382,10 @@ export default function Home2() {
               <div className="flex lg:flex-row md:flex-col gap-6">
                 <div className="relative flex-1">
                   <select
-                    title="student"
-                    aria-label="student"
+                    title="job"
+                    aria-label="job"
                     required
-                    className="w-full border-b border-[#333333] pb-1 bg-[#000] pt-4 outline-none peer text-white
+                    className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
                peer-invalid:border-red-500 appearance-none"
                   >
                     <option value=""></option>
@@ -376,7 +406,7 @@ export default function Home2() {
                     title="country"
                     aria-label="country"
                     required
-                    className="w-full border-b border-[#333333] pb-1 bg-[#000] pt-4 outline-none peer text-white
+                    className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
                peer-invalid:border-red-500 appearance-none"
                   >
                     <option value=""></option>
@@ -467,7 +497,12 @@ export default function Home2() {
                   Message *
                 </label>
               </div>
-              <button className="w-[100px]">Submit</button>
+              <CustomButton
+                type="primary"
+                className="min-w-[30px] !text-[14px] !py-[10px] !px-[20px] !font-thin my-[30px] shadow-[0px_0px_3px_rgba(255,255,255,0.8)]"
+              >
+                Submit
+              </CustomButton>
             </form>
           </div>
         </div>
