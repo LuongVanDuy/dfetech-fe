@@ -105,7 +105,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${JakartaFont.variable}antialiased`}>
+      <body className={`${JakartaFont.variable} antialiased`}>
         <DefaultLayout>{children}</DefaultLayout>
       </body>
     </html>
