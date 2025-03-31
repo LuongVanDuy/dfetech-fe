@@ -1,7 +1,5 @@
 import CustomButton from "@/components/CustomButton";
 import SliderSolution from "@/components/templates/solutions/slider/SliderSolution";
-import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
-import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
 import { DegressIcon } from "@/Icons/DegressIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
 import { LayerIcon } from "@/Icons/LayerIcon";
@@ -18,9 +16,11 @@ export default function Home1() {
             background: "linear-gradient(to bottom, #38CD60, #0E221C)",
           }}
         >
-          <p className="text-5xl">Dyna Forming Engineering</p>
-          <p className="text-5xl">& Technology</p>
-          <p className="text-lg opacity-70 mt-5">
+          <p className="text-4xl uppercase font-bold">
+            Dyna Forming Engineering
+          </p>
+          <p className="text-4xl uppercase font-bold">& Technology</p>
+          <p className="text-lg opacity-70 mt-5 ">
             Next-Gen Engineering Solutions
           </p>
           <CustomButton type="contact-home">Contact Us →</CustomButton>
@@ -43,11 +43,13 @@ export default function Home1() {
             />
           </div>
 
-          <div className="absolute hidden xl:block top-[11%] text-white w-full flex justify-center">
+          <div className="absolute hidden xl:block top-[15%] text-white w-full flex justify-center">
             <div className="flex flex-col items-center gap-5">
-              <p className="text-5xl">Dyna Forming Engineering</p>
-              <p className="text-5xl">& Technology</p>
-              <p className="text-lg opacity-70 mt-5">
+              <p className="text-4xl uppercase font-bold">
+                Dyna Forming Engineering
+              </p>
+              <p className="text-4xl uppercase font-bold">& Technology</p>
+              <p className="text-lg opacity-70 mt-5 ">
                 Next-Gen Engineering Solutions
               </p>
               <CustomButton type="contact-home">Contact Us →</CustomButton>
