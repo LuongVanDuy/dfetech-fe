@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonStyled = styled.div`
-   .primary {
+  .primary {
     position: relative;
     border-radius: 50px;
     padding: 12px 24px;
@@ -11,6 +11,8 @@ export const ButtonStyled = styled.div`
     text-align: center;
     background: var(--color-bg-bg-dark, rgba(11, 14, 21, 1));
     color: rgba(240, 255, 250, 1);
+    border: none;
+    cursor: pointer;
   }
 
   .primary::before {
@@ -40,7 +42,7 @@ export const ButtonStyled = styled.div`
   }
 
   .contact-home {
-    background: radial-gradient(circle, rgb(73 206 80 / 80%) 0%, #163f20 83%);
+    background: radial-gradient(circle, rgba(73, 206, 80, 0.8) 0%, #163f20 83%);
     border-radius: 50px;
     padding: 12px 24px;
     color: rgba(255, 255, 255, 0.85);
@@ -60,7 +62,7 @@ export const ButtonStyled = styled.div`
     }
   }
 
-   .icon {
+  .icon {
     background: radial-gradient(
       circle,
       rgba(46, 125, 50, 0.8) 0%,
@@ -71,7 +73,7 @@ export const ButtonStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 50%;
     color: rgba(255, 255, 255, 0.85);
     font-size: 18px;
     font-weight: bold;
@@ -87,4 +89,12 @@ export const ButtonStyled = styled.div`
       box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.6),
         0 5px 8px rgba(0, 0, 0, 0.4);
     }
+  }
+
+  @media (max-width: 768px) {
+    .primary {
+      font-size: 8px;
+      padding: 3px 15px;
+    }
+  }
 `;

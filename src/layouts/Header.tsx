@@ -22,7 +22,7 @@ export default function Header() {
       <div className="flex justify-between xl:justify-around p-5">
         <div className="flex items-center gap-5">
           <MenuIcon className="block xl:hidden" />
-          <div>
+          <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">
             <Image alt="Logo" src="/brands/logo.svg" width={113} height={54} />
           </div>
           {menuHeader?.map((item, index) => {
