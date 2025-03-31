@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
 import CustomButton from "@/components/CustomButton";
 import { TimeIcon } from "@/Icons/TimeIcon";
 import { DateIcon } from "@/Icons/DateIcon";
+import BoxImage from "@/components/images/BoxImage";
 
 interface BoxVerticalProps {
   imageSrc: string;
@@ -23,13 +23,7 @@ const BoxVertical: React.FC<BoxVerticalProps> = ({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-10 gap-4">
       <div className="text-white lg:col-span-4">
-        <Image
-          src={imageSrc}
-          width={215}
-          height={150}
-          alt={title}
-          className="w-[100%] cursor-pointer"
-        />
+        <BoxImage imageUrl={imageSrc} height="61.52%" />
       </div>
       <div className="text-white lg:col-span-6 flex flex-col justify-between">
         <div>

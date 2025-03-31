@@ -146,6 +146,7 @@ export default function Home2() {
                   date="Academy"
                   imageSrc="/home/academy.png"
                   description="Utilized by Students, Educators and Researchers Across the World. The demand for graduates with engineering simulation skills is exploding. This is largely due to the widespread use of simulation across product development and optimization workflows."
+                  type="large"
                 />
               </article>
               <article className="md:p-[45px] sm:p-[10px]">
