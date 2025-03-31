@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="text-center text-[#fff]  bg-[#0B0E15]">
-      <div className="mx-auto px-[120px] ">
+      <div className="mx-auto lg:px-[120px] sm:px-[10px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 border-l-[0.5px] border-r-[0.5px] border-[#2c2c2c]">
           <div className="pl-[45px] py-[45px] text-start border-r-[0.5px] border-[#2c2c2c]">
             <Link href={"/"}>
