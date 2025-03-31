@@ -17,11 +17,11 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-custom), sans-serif;
 }
 
 html {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: var(--font-custom), sans-serif;
 }
 
 @layer utilities {

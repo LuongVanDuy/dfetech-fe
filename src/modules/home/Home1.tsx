@@ -103,9 +103,9 @@ export default function Home1() {
         </div>
 
         <div
-          className="flex xl:hidden  flex-col items-center text-center text-white gap-5 py-10"
+          className="flex xl:hidden flex-col items-center text-center text-white gap-5 py-10"
           style={{
-            background: "linear-gradient(to bottom, #0E221C, #38CD60,)",
+            background: "linear-gradient(to bottom, #0E221C, #38CD60)",
           }}
         >
           <div className="flex flex-col items-center gap-2">

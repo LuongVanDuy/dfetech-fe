@@ -1,41 +1,65 @@
-import BoxImage from "@/components/images/BoxImage";
-import { MoreIcon } from "@/Icons/MoreIcon";
-
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface BoxSolutionProps {
-  title: string;
-  date: string;
-  imageSrc: string;
-  description: string;
-  type?: "normal" | "large";
+  imageUrl: string;
+  height?: string;
+  linkUrl?: string;
+  altText?: string;
+  effect?: "zoom" | "none";
+  link?: any;
+  title?: any;
 }
 
 const BoxSolution: React.FC<BoxSolutionProps> = ({
+  imageUrl,
+  height = "100%",
+  linkUrl = "",
+  altText = "Image",
+  effect = "none",
+  link,
   title,
-  date,
-  imageSrc,
-  description,
-  type = "normal",
 }) => {
   return (
-    <article className="overflow-hidden">
-      <BoxImage imageUrl={imageSrc} height="61.52%" effect="zoom" />
-      <div className="py-4">
-        <p className="text-sm text-green-600">{date}</p>
-        <div className="flex items-center justify-between cursor-pointer">
-          <h2
-            className={`font-semibold mt-1 ${
-              type === "large" ? "text-[32px]" : "text-lg"
-            }`}
-          >
-            {title}
-          </h2>
-          <MoreIcon className="cursor-pointer" />
+    <div className="h-auto mx-auto overflow-hidden relative">
+      <div
+        className="bg-center bg-cover h-auto overflow-hidden relative group"
+        style={{ paddingTop: height }}
+      >
+        <a
+          href={linkUrl}
+          className="absolute inset-0 transition-transform duration-300 group-hover:scale-[1.2]"
+        >
+          <Image
+            src={imageUrl}
+            alt={altText}
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0"
+          />
+        </a>
+
+        <p
+          className={`absolute bottom-[10%] left-[10%] group-hover:hidden text-xl`}
+        >
+          {title}
+        </p>
+
+        <div
+          className={`absolute bottom-5 left-5 right-5 bg-[#0B0E1599] transition-all duration-300 transform translate-y-5 opacity-0 pointer-events-none group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto`}
+        >
+          <div className="p-5 flex flex-col gap-2">
+            <p className="text-2xl font-bold">Ansys</p>
+            {link?.map((item: any, index: number) => (
+              <Link key={index} className="text-[#2C7656]" href={item?.href}>
+                {item?.name}
+              </Link>
+            ))}
+          </div>
         </div>
-        <p className="text-gray-600 text-sm mt-2 line-clamp-2">{description}</p>
       </div>
-    </article>
+    </div>
   );
 };
 
