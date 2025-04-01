@@ -8,9 +8,7 @@ const Container: React.FC<ContainerProps> = ({
   fullWidth = false,
 }) => {
   return (
-    <div className={`${fullWidth ? "w-full" : "max-w-[1680px] mx-auto"}`}>
-      {children}
-    </div>
+    <div className={`${fullWidth ? "w-full" : "container"}`}>{children}</div>
   );
 };
 

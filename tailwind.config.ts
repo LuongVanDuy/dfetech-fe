@@ -4,6 +4,16 @@ const config: Config = {
   content: ["./src/**/*.{html,js,ts,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true, // Căn giữa container (margin: auto)
+        screens: {
+          sm: "100%", // 100% chiều rộng trên mobile
+          md: "640px", // Tablet
+          lg: "1024px", // Laptop
+          xl: "1280px", // Desktop
+          "2xl": "1680px", // Màn hình lớn nhất
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
