@@ -40,17 +40,18 @@ const BoxSolution: React.FC<BoxSolutionProps> = ({
           />
         </a>
 
-        <p
-          className={`absolute bottom-[10%] left-[10%] group-hover:hidden text-xl`}
+        <h3
+          className={`absolute bottom-[10%] left-[10%] group-hover:hidden 
+              text-[32px] leading-[38px] font-medium text-white`}
         >
           {title}
-        </p>
+        </h3>
 
         <div
-          className={`absolute bottom-5 left-5 right-5 bg-[#0B0E1599] transition-all duration-300 transform translate-y-5 opacity-0 pointer-events-none group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto`}
+          className={`absolute rounded-xl bottom-5 left-5 right-5 bg-[#0B0E1599] transition-all duration-300 transform translate-y-5 opacity-0 pointer-events-none group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto`}
         >
           <div className="p-5 flex flex-col gap-2">
-            <p className="text-2xl font-bold">Ansys</p>
+            <h3 className="text-2xl font-medium text-white">{title}</h3>
             {link?.map((item: any, index: number) => (
               <Link key={index} className="text-[#2C7656]" href={item?.href}>
                 {item?.name}
