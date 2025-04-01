@@ -25,7 +25,7 @@ const TrainingCarousel = () => {
 
   return (
     <div>
-      <div className="flex mb-4 justify-between items-center">
+      <div className="flex mb-[16px] justify-between items-center">
         <span className="text-[#ADB5BD]">Training courses:</span>
         <div className="flex items-center gap-4">
           <CustomButton
