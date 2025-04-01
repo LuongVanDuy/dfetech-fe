@@ -28,7 +28,7 @@ const BoxVertical: React.FC<BoxVerticalProps> = ({
       <div className=" lg:col-span-7 flex flex-col justify-between">
         <div>
           <p className="text-sm text-[#2C7656] mb-2">{category}</p>
-          <h3 className="text-[24px] leading-[28.8px] mb-3 cursor-pointer">
+          <h3 className="text-[24px] leading-[28.8px] mb-3 cursor-pointer sm:line-clamp-2 md:line-clamp-3">
             <a
               href=""
               className="hover:text-[rgba(44,118,86,1)] transition-colors duration-300"

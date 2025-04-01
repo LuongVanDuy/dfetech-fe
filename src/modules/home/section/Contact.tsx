@@ -5,7 +5,7 @@ import React from "react";
 
 const Contact = (props: any) => {
   return (
-    <section className="touch-section min-h-[600px] lg:px-[120px]">
+    <section className="touch-section  min-h-[600px] lg:px-[120px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="text-center">
           <Image
@@ -16,12 +16,13 @@ const Contact = (props: any) => {
             className="w-[100%] cursor-pointer lg:hidden md:block"
           />
         </div>
-        <div className="md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]mb-[20px] text-start">
+        <div className="md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] mb-[20px]  text-start">
           <MainTitle
             title="Get in touch with us"
             description="Drop us a note - we look forward to hearing from you"
+            className="md:pt-8  sm:px-2"
           />
-          <form className="mt-8 flex flex-col  gap-9">
+          <form className="mt-8 flex flex-col sm:px-2 md:px-0 gap-9">
             <div className="relative">
               <select
                 title="country"
