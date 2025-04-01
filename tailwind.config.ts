@@ -5,13 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       container: {
-        center: true, // Căn giữa container (margin: auto)
+        center: true,
         screens: {
-          sm: "100%", // 100% chiều rộng trên mobile
-          md: "640px", // Tablet
-          lg: "1024px", // Laptop
-          xl: "1280px", // Desktop
-          "2xl": "1680px", // Màn hình lớn nhất
+          sm: "100%",
+          md: "640px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1680px",
         },
       },
       colors: {
@@ -25,11 +25,11 @@ const config: Config = {
           "0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -2px rgba(255, 255, 255, 0.1)",
       },
       screens: {
-        sm: "375px", // Mobile screens
-        md: "769px", // Tablets
-        lg: "1024px", // Laptops
-        xl: "1280px", // Desktops
-        "2xl": "1536px", // Large desktops
+        sm: "375px",
+        md: "769px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },

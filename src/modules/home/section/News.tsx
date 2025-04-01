@@ -1,10 +1,9 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
-import Image from "next/image";
+import CustomButton from "@/components/button";
 import { MoreIcon } from "@/Icons/MoreIcon";
-import BoxNormal from "@/components/templates/posts/loop/BoxNormal";
-import BoxVertical from "@/components/templates/posts/loop/BoxVertical";
+import BoxNormal from "@/components/box/BoxNormal";
+import BoxVertical from "@/components/box/BoxVertical";
 import Container from "@/layouts/Container";
 
 const newsData = [
@@ -104,7 +103,7 @@ const News = (props: any) => {
                   <h2 className="text-[40px]">Events</h2>
                   <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
-                <div className="flex flex-col gap-[40px]">
+                <div className="flex flex-col gap-[48px]">
                   {eventData.map((event, index) => (
                     <BoxVertical key={index} {...event} />
                   ))}

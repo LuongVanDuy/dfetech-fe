@@ -1,8 +1,8 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
-import SliderSolution from "@/components/templates/solutions/slider/SliderSolution";
+import CustomButton from "@/components/button";
 import Container from "@/layouts/Container";
+import SolutionsCarousel from "@/components/sliders/SolutionsCarousel";
 
 const SoftwareSolutions = (props: any) => {
   return (
@@ -17,7 +17,7 @@ const SoftwareSolutions = (props: any) => {
           <CustomButton className="hidden md:block">See all →</CustomButton>
         </div>
       </Container>
-      <SliderSolution />
+      <SolutionsCarousel />
     </section>
   );
 };

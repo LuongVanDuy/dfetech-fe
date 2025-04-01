@@ -20,6 +20,10 @@ body {
   font-family: var(--font-custom), sans-serif;
 }
 
+.font-teko {
+  font-family: var(--font-teko);
+}
+
 html {
   font-family: var(--font-custom), sans-serif;
 }
@@ -58,4 +62,22 @@ html {
       #48ca96 -16%,
       rgba(41, 128, 103, 0) 25.24%
     );
+}
+
+.splide__track {
+  overflow: hidden;
+}
+
+.splide__list {
+  display: flex;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

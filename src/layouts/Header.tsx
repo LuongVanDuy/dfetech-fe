@@ -1,6 +1,6 @@
 "use client";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import { EnglandIcon } from "@/Icons/EnglandIcon";
 import { MenuIcon } from "@/Icons/MenuIcon";
 import { SearchIcon } from "@/Icons/SearchIcon";
@@ -20,10 +20,10 @@ export default function Header() {
 
   return (
     <header id="header">
-      <div className="fixed z-50 w-full bg-[#0B0E1566] ">
+      <div className="fixed z-50 w-full bg-[#0B0E1566] backdrop-blur-[100px]">
         <Container>
-          <div className="flex justify-between xl:justify-between p-5">
-            <div className="flex items-center gap-5">
+          <div className="flex justify-between xl:justify-between px-[24px] py-[16px]">
+            <div className="flex items-center gap-[48px]">
               <MenuIcon className="block xl:hidden" />
               <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">
                 <Image

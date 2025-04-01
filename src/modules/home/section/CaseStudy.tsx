@@ -1,6 +1,6 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import Image from "next/image";
 import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";

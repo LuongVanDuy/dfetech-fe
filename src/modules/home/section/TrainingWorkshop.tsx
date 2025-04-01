@@ -1,14 +1,15 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import Image from "next/image";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import Container from "@/layouts/Container";
+import TrainingCarousel from "@/components/sliders/TrainingCarousel";
 
 const TrainingWorkshop = (props: any) => {
   return (
-    <section className="bg-[#000] ">
+    <section className="bg-[#0b0e15] ">
       <Container>
         <div className="flex flex-col-reverse md:grid md:grid-cols-10">
           <div className="md:col-span-6  rounded-lg">
@@ -30,30 +31,7 @@ const TrainingWorkshop = (props: any) => {
                 Booking Now
               </CustomButton>
 
-              <div className="flex my-3 justify-between items-center">
-                <span className="text-[#ADB5BD]">Training courses:</span>
-                <div className="flex items-center gap-3">
-                  <CustomButton
-                    type="icon"
-                    className="!shadow-[0px_0px_10px_rgba(255,255,255,0.3)]"
-                  >
-                    <ChevronLeftIcon />
-                  </CustomButton>
-                  <CustomButton
-                    type="icon"
-                    className="!shadow-[0px_0px_10px_rgba(255,255,255,0.3)]"
-                  >
-                    <ChevronRightIcon />
-                  </CustomButton>
-                </div>
-              </div>
-
-              <div className="flex gap-5">
-                <div className="flex items-center px-[45px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
-                  <span className="text-[#fff] text-[60px]">01</span>
-                  <p className="text-[#ADB5BD]">Introduction to LS-DYNA®</p>
-                </div>
-              </div>
+              <TrainingCarousel />
             </div>
           </div>
 
