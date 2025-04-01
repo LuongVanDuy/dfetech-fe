@@ -4,9 +4,21 @@ const config: Config = {
   content: ["./src/**/*.{html,js,ts,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true, // Căn giữa container (margin: auto)
+        screens: {
+          sm: "100%", // 100% chiều rộng trên mobile
+          md: "640px", // Tablet
+          lg: "1024px", // Laptop
+          xl: "1280px", // Desktop
+          "2xl": "1680px", // Màn hình lớn nhất
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customGray: "rgba(73, 80, 87, 1)",
+        customGreen: "rgba(44, 118, 86, 1)",
       },
       boxShadow: {
         white:
@@ -14,7 +26,7 @@ const config: Config = {
       },
       screens: {
         sm: "375px", // Mobile screens
-        md: "768px", // Tablets
+        md: "769px", // Tablets
         lg: "1024px", // Laptops
         xl: "1280px", // Desktops
         "2xl": "1536px", // Large desktops

@@ -22,13 +22,15 @@ const BoxVertical: React.FC<BoxVerticalProps> = ({
 }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-10 gap-4">
-      <div className="text-white lg:col-span-4">
+      <div className="lg:col-span-4">
         <BoxImage imageUrl={imageSrc} height="61.52%" />
       </div>
-      <div className="text-white lg:col-span-6 flex flex-col justify-between">
+      <div className=" lg:col-span-6 flex flex-col justify-between">
         <div>
-          <p className="text-sm text-[#2C7656]">{category}</p>
-          <h3 className="text-[#000] cursor-pointer">{title}</h3>
+          <p className="text-sm text-[#2C7656] mb-2">{category}</p>
+          <h3 className="text-[18px] leading-[24px] mb-3 cursor-pointer">
+            {title}
+          </h3>
         </div>
         <div className="flex justify-between">
           <div className="text-gray-700">

@@ -6,6 +6,7 @@ import { MenuIcon } from "@/Icons/MenuIcon";
 import { SearchIcon } from "@/Icons/SearchIcon";
 import Image from "next/image";
 import Link from "next/link";
+import Container from "./Container";
 
 export default function Header() {
   const menuHeader = [
@@ -18,32 +19,41 @@ export default function Header() {
   ];
 
   return (
-    <div className="fixed z-50 w-full bg-[#0B0E1566] ">
-      <div className="flex justify-between xl:justify-around p-5">
-        <div className="flex items-center gap-5">
-          <MenuIcon className="block xl:hidden" />
-          <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">
-            <Image alt="Logo" src="/brands/Logo.svg" width={113} height={54} />
-          </div>
-          {menuHeader?.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="text-white opacity-70 hidden xl:block"
-              >
-                <Link href={item.href}> {item.name}</Link>
+    <header id="header">
+      <div className="fixed z-50 w-full bg-[#0B0E1566] ">
+        <Container>
+          <div className="flex justify-between xl:justify-between p-5">
+            <div className="flex items-center gap-5">
+              <MenuIcon className="block xl:hidden" />
+              <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">
+                <Image
+                  alt="Logo"
+                  src="/brands/logo.svg"
+                  width={113}
+                  height={54}
+                />
               </div>
-            );
-          })}
-        </div>
+              {menuHeader?.map((item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="text-white opacity-70 hidden xl:block"
+                  >
+                    <Link href={item.href}> {item.name}</Link>
+                  </div>
+                );
+              })}
+            </div>
 
-        <div className="flex items-center gap-5">
-          <SearchIcon />
-          <EnglandIcon />
+            <div className="flex items-center gap-5">
+              <SearchIcon />
+              <EnglandIcon />
 
-          <CustomButton>Contact Us</CustomButton>
-        </div>
+              <CustomButton>Contact Us</CustomButton>
+            </div>
+          </div>
+        </Container>
       </div>
-    </div>
+    </header>
   );
 }
