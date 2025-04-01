@@ -40,6 +40,8 @@ const BoxSolution: React.FC<BoxSolutionProps> = ({
           />
         </a>
 
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#0B0E15]"></div>
+
         <h3
           className={`absolute bottom-[10%] left-[10%] group-hover:hidden 
               text-[32px] leading-[38px] font-medium text-white`}

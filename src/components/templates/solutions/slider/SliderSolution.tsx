@@ -21,6 +21,53 @@ const SliderSolution = () => {
     if (swiperRef.current) swiperRef.current.swiper.slideNext();
   };
 
+  const data = [
+    {
+      title: "Ansys",
+      imageUrl: "/products/product-1.svg",
+      link: [
+        { name: "LS-DYNA", href: "ly-dyna-1" },
+        { name: "Ansys Mechanical", href: "ly-dyna-1" },
+        { name: "Ansys CFD", href: "ly-dyna-1" },
+        { name: "Ansys Electronics", href: "ly-dyna-1" },
+        { name: "Other Ansys Products", href: "ly-dyna-1" },
+      ],
+    },
+    {
+      title: "Autodesk",
+      imageUrl: "/products/product-2.svg",
+      link: [
+        { name: "LS-DYNA", href: "ly-dyna-1" },
+        { name: "Ansys Mechanical", href: "ly-dyna-1" },
+        { name: "Ansys CFD", href: "ly-dyna-1" },
+        { name: "Ansys Electronics", href: "ly-dyna-1" },
+        { name: "Other Ansys Products", href: "ly-dyna-1" },
+      ],
+    },
+    {
+      title: "SolidWorks",
+      imageUrl: "/products/product-1.svg",
+      link: [
+        { name: "LS-DYNA", href: "ly-dyna-1" },
+        { name: "Ansys Mechanical", href: "ly-dyna-1" },
+        { name: "Ansys CFD", href: "ly-dyna-1" },
+        { name: "Ansys Electronics", href: "ly-dyna-1" },
+        { name: "Other Ansys Products", href: "ly-dyna-1" },
+      ],
+    },
+    {
+      title: "MATLAB",
+      imageUrl: "/products/product-2.svg",
+      link: [
+        { name: "LS-DYNA", href: "ly-dyna-1" },
+        { name: "Ansys Mechanical", href: "ly-dyna-1" },
+        { name: "Ansys CFD", href: "ly-dyna-1" },
+        { name: "Ansys Electronics", href: "ly-dyna-1" },
+        { name: "Other Ansys Products", href: "ly-dyna-1" },
+      ],
+    },
+  ];
+
   return (
     <div>
       <Swiper
@@ -31,20 +78,14 @@ const SliderSolution = () => {
         modules={[Pagination]}
         className="SliderSolution"
       >
-        {[...Array(4)].map((_, index) => (
+        {data.map((item, index) => (
           <SwiperSlide key={index}>
             <BoxSolution
-              imageUrl="/home/Solution-2.png"
+              imageUrl={item.imageUrl}
               height="103.67%"
               effect="zoom"
-              title="UBECO"
-              link={[
-                { name: "LS-DYNA", href: "ly-dyna" },
-                { name: "LS-DYNA", href: "ly-dyna" },
-                { name: "LS-DYNA", href: "ly-dyna" },
-                { name: "LS-DYNA", href: "ly-dyna" },
-                { name: "LS-DYNA", href: "ly-dyna" },
-              ]}
+              title={item.title}
+              link={item.link}
             />
           </SwiperSlide>
         ))}
