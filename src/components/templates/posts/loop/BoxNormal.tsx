@@ -24,13 +24,15 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
       <div className="py-4">
         <p className="text-sm text-green-600">{date}</p>
         <div className="flex items-center justify-between cursor-pointer">
-          <h2
+          <h3
             className={`font-[400] mt-1 ${
-              type === "large" ? "text-[32px]" : "text-lg"
+              type === "large"
+                ? "text-[32px] leading-[38px]"
+                : "text-lg leading-[28px]"
             }`}
           >
             {title}
-          </h2>
+          </h3>
           <MoreIcon className="cursor-pointer" />
         </div>
         <p className="text-gray-600 text-sm mt-2 line-clamp-2">{description}</p>

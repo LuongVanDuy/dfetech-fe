@@ -50,7 +50,7 @@ const SliderSolution = () => {
         ))}
       </Swiper>
 
-      <div className="flex justify-between md:justify-center items-center py-5">
+      <div className="flex justify-between px-5 md:px-20 py-[24px] md:pt-[48px] md:pb-[64px]  md:justify-center">
         <div className="flex gap-2">
           <CustomButton type="icon" onClick={handlePrev}>
             <ChevronLeftIcon />
