@@ -63,10 +63,7 @@ const News = (props: any) => {
           <div className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
             <div className="flex justify-between items-center mb-[40px]">
               <h2 className="text-[40px] leading-[48px]">News</h2>
-              <CustomButton
-                type="primary"
-                className="!font-thin md:block sm:hidden"
-              >
+              <CustomButton type="primary" className="md:block sm:hidden">
                 See all →
               </CustomButton>
             </div>
@@ -78,7 +75,7 @@ const News = (props: any) => {
             </div>
             <CustomButton
               type="primary"
-              className="!font-thin min-w-[30px] !text-[14px] !py-[8px] !px-[20px]  md:hidden sm:block"
+              className="min-w-[30px] !text-[14px] !py-[8px] !px-[20px]  md:hidden sm:block"
             >
               See all →
             </CustomButton>
