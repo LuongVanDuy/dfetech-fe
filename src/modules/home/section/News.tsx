@@ -11,21 +11,21 @@ const newsData = [
   {
     title: "PROFIL Version 6.4 is Released!",
     date: "19 Jan 2022",
-    imageSrc: "/home/new.png",
+    imageSrc: "/posts/post-1.svg",
     description:
       "Retaining ring notches, shoulders, chamfers, fillets: The bore hole details are shown and exported in the drawing area on the screen, in the CAD exports by ActiveX, DXF, and STEP in 2D and 3D, in the print and plot functions, in the NC exports, and in the roll stock management (option).",
   },
   {
     title: "PROFIL Version 6.4 is Released!",
     date: "19 Jan 2022",
-    imageSrc: "/home/new.png",
+    imageSrc: "/posts/post-2.svg",
     description:
       "Retaining ring notches, shoulders, chamfers, fillets: The bore hole details are shown and exported in the drawing area on the screen, in the CAD exports by ActiveX, DXF, and STEP in 2D and 3D, in the print and plot functions, in the NC exports, and in the roll stock management (option).",
   },
   {
     title: "PROFIL Version 6.4 is Released!",
     date: "19 Jan 2022",
-    imageSrc: "/home/new.png",
+    imageSrc: "/posts/post-3.svg",
     description:
       "Retaining ring notches, shoulders, chamfers, fillets: The bore hole details are shown and exported in the drawing area on the screen, in the CAD exports by ActiveX, DXF, and STEP in 2D and 3D, in the print and plot functions, in the NC exports, and in the roll stock management (option).",
   },
@@ -33,7 +33,7 @@ const newsData = [
 
 const eventData = [
   {
-    imageSrc: "/home/academy.png",
+    imageSrc: "/posts/post-4.svg",
     category: "Events",
     title:
       "Exploring Ansys Discovery – The Simulation Software for Every Engineer",
@@ -41,18 +41,18 @@ const eventData = [
     date: "Dec 19 2024",
   },
   {
-    imageSrc: "/home/academy.png",
-    category: "Webinar",
-    title: "Future of AI in Engineering Simulations",
-    time: "10:00 AM - 11:30 AM",
-    date: "Jan 15 2025",
+    imageSrc: "/posts/post-5.svg",
+    category: "Events",
+    title: "FANSYS Electronics Webinar (Magnetic Latching Using Ansys Maxwell)",
+    time: "3:00 PM - 4:00 PM",
+    date: "Dec 19 2024",
   },
   {
-    imageSrc: "/home/academy.png",
-    category: "Workshop",
-    title: "Hands-on Training: CFD Analysis Basics",
-    time: "1:00 PM - 5:00 PM",
-    date: "Feb 5 2025",
+    imageSrc: "/posts/post-6.svg",
+    category: "Events",
+    title: "Introduction of Ansys Mechanical APDL | December 19, 2024",
+    time: "3:00 PM - 4:00 PM",
+    date: "Dec 19 2024",
   },
 ];
 
@@ -92,7 +92,7 @@ const News = (props: any) => {
                   <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
                 <BoxNormal
-                  imageSrc="/home/academy.png"
+                  imageSrc="/posts/post-7.svg"
                   title="Ansys Academic"
                   date="19 Jan 2022"
                   description="Utilized by Students, Educators and Researchers Across the World. The demand for graduates with engineering simulation skills is exploding. This is largely due to the widespread use of simulation across product development and optimization workflows."

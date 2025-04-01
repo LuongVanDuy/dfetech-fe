@@ -40,7 +40,7 @@ const Intro = (props: any) => {
 
         <div className="absolute hidden xl:block top-[15%] text-white w-full flex justify-center">
           <div className="flex flex-col items-center gap-5">
-            <h2 className="text-4xl uppercase font-bold">
+            <h2 className="text-4xl uppercase font-bold text-center leading-8">
               Dyna Forming Engineering <br /> & Technology
             </h2>
             <p className="text-lg opacity-70 mt-5 ">
