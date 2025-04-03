@@ -1,13 +1,11 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
 import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
 import { DegressIcon } from "@/Icons/DegressIcon";
 import { LayerIcon } from "@/Icons/LayerIcon";
 import Container from "@/layouts/Container";
-import BoxSolution from "@/components/templates/solutions/loop/BoxSolution";
 
 const SoftwareSolutionContent = (props: any) => {
   return (
