@@ -1,3 +1,4 @@
+import CustomButton from "@/components/CustomButton";
 import BoxImage from "@/components/images/BoxImage";
 import { MoreIcon } from "@/Icons/MoreIcon";
 
@@ -7,8 +8,10 @@ interface BoxNormalProps {
   title: string;
   date: string;
   imageSrc: string;
-  description: string;
-  type?: "normal" | "large";
+  description?: string;
+  icon?: any;
+  type?: "normal" | "large" | "rounded";
+  className?: string;
 }
 
 const BoxNormal: React.FC<BoxNormalProps> = ({
@@ -16,12 +19,23 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
   date,
   imageSrc,
   description,
+  icon,
   type = "normal",
+  className,
 }) => {
   return (
-    <article className="overflow-hidden">
+    <article className={`overflow-hidden ${className}`}>
       <BoxImage imageUrl={imageSrc} height="61.52%" effect="zoom" />
-      <div className="py-4">
+      <div
+        className={`relative py-4 ${
+          type === "rounded" && "!p-10 bg-[#10131A]"
+        }`}
+      >
+        {icon && (
+          <CustomButton className="absolute top-[-15%] right-[15%]" type="icon">
+            {icon}
+          </CustomButton>
+        )}
         <p className="text-sm text-green-600">{date}</p>
         <div className="flex items-center justify-between cursor-pointer">
           <h3
