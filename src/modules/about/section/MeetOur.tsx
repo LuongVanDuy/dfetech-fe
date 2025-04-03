@@ -1,6 +1,6 @@
 "use client";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
 import { EnglandIcon } from "@/Icons/EnglandIcon";

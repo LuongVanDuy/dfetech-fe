@@ -1,11 +1,8 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
-import { MoreIcon } from "@/Icons/MoreIcon";
-import BoxNormal from "@/components/templates/posts/loop/BoxNormal";
-import BoxVertical from "@/components/templates/posts/loop/BoxVertical";
 import Container from "@/layouts/Container";
+import BoxNormal from "@/components/box/BoxNormal";
 
 const newsData = [
   {

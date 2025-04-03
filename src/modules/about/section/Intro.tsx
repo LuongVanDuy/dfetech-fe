@@ -1,7 +1,7 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
+import CustomButton from "@/components/button";
 
 const Intro = (props: any) => {
   return (

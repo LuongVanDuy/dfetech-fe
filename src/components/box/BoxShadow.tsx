@@ -25,7 +25,7 @@ export default function BoxShadow({
             image || type === "col" ? "flex-col" : ""
           }`}
         >
-          <CustomButton type="icon" className="!w-[80px] !h-[80px] p-3">
+          <CustomButton type="icon" className="p-3">
             {icon}
           </CustomButton>
           <div className="flex flex-col gap-3">

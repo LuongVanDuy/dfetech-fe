@@ -32,7 +32,10 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
         }`}
       >
         {icon && (
-          <CustomButton className="absolute top-[-15%] right-[15%]" type="icon">
+          <CustomButton
+            className="!absolute top-[-15%] right-[15%]"
+            type="icon"
+          >
             {icon}
           </CustomButton>
         )}

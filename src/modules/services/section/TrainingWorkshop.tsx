@@ -1,10 +1,10 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import Container from "@/layouts/Container";
+import CustomButton from "@/components/button";
 
 const TrainingWorkshop = (props: any) => {
   return (

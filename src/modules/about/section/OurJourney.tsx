@@ -1,6 +1,5 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
 import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
@@ -9,6 +8,7 @@ import Container from "@/layouts/Container";
 import { EnglandIcon } from "@/Icons/EnglandIcon";
 import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
 import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
+import CustomButton from "@/components/button";
 
 const OurJourney = (props: any) => {
   return (

@@ -1,15 +1,14 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
 import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
 import { DegressIcon } from "@/Icons/DegressIcon";
 import Container from "@/layouts/Container";
-import BoxShadow from "@/components/templates/posts/loop/BoxShadow";
 import { FavoriteChartIcon } from "@/Icons/FavoriteChart";
 import { EyeIcon } from "@/Icons/EyeIcon";
 import { StarIcon } from "@/Icons/StarIcon";
+import BoxShadow from "@/components/box/BoxShadow";
 
 const OurExpertise = (props: any) => {
   return (

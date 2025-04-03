@@ -1,17 +1,9 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
-import Image from "next/image";
-import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
-import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
-import { DegressIcon } from "@/Icons/DegressIcon";
 import Container from "@/layouts/Container";
-import { EnglandIcon } from "@/Icons/EnglandIcon";
-import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
-import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
-import BoxDifferent from "@/components/templates/posts/loop/BoxDifferent";
-import BoxShadow from "@/components/templates/posts/loop/BoxShadow";
+
 import { StarIcon } from "@/Icons/StarIcon";
+import BoxShadow from "@/components/box/BoxShadow";
 
 const OurCore = (props: any) => {
   return (
