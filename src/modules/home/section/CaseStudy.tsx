@@ -1,11 +1,12 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import Image from "next/image";
 import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
 import { DegressIcon } from "@/Icons/DegressIcon";
 import Container from "@/layouts/Container";
+import MainTitle from "@/components/title/MainTitle";
 
 const CaseStudy = (props: any) => {
   return (
@@ -20,15 +21,16 @@ const CaseStudy = (props: any) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-white mx-16">
               <div className="order-last md:order-first flex justify-center items-center">
                 <div className="flex flex-col gap-5">
-                  <p className="text-[#2C7656]">Case Study</p>
-                  <p className="text-4xl">Computer-Aided Engineering</p>
-                  <p className="text-[#ADB5BD]">
-                    Using 3DCS, we help industries minimize production variation
+                  <MainTitle
+                    subTitle="Case Study"
+                    title="Computer-Aided Engineering"
+                    description="Using 3DCS, we help industries minimize production variation
                     through precise dimensional analysis, ensuring accuracy in
-                    every step of the manufacturing process.
-                  </p>
-
-                  <CustomButton className="mt-5">Explore →</CustomButton>
+                    every step of the manufacturing process."
+                    link="#"
+                    linktext="Explore →"
+                    type="small"
+                  />
                 </div>
               </div>
               <div className="order-first md:order-last">

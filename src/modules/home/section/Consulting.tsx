@@ -1,62 +1,76 @@
 import React from "react";
 
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import Image from "next/image";
 import { PlayCircleIcon } from "@/Icons/PlayCircleIcon";
 import { HelpCircleIcon } from "@/Icons/HelpCircleIcon";
 import { DegressIcon } from "@/Icons/DegressIcon";
 import { LayerIcon } from "@/Icons/LayerIcon";
 import Container from "@/layouts/Container";
+import BoxConsulting from "@/components/box/BoxConsulting";
+import MainTitle from "@/components/title/MainTitle";
+
+const consultingData1 = {
+  imageSrc: "/home/shuttersock-1.jpeg",
+  imageAlt: "Consulting Image 1",
+  text: "Sheet Stamping Engineering",
+  listItems: [
+    "Draw Die Development and Simulation",
+    "Design of Progressive and Transfer Dies",
+    "Die Structure Designs and Analysis",
+    "Die Process Design",
+    "Blank Size Estimation and Cost Analysis",
+    "Spring back Estimation and Compensation",
+    "Tubular Bending and Hydroforming",
+    "Formability Engineering Analysis",
+  ],
+};
+
+const consultingData2 = {
+  imageSrc: "/home/shuttersock-2.jpeg",
+  imageAlt: "Consulting Image 2",
+  text: "Advanced CAE Analysis",
+  listItems: [
+    "Draw Die Development and Simulation",
+    "Design of Progressive and Transfer Dies",
+    "Die Structure Designs and Analysis",
+    "Die Process Design",
+    "Blank Size Estimation and Cost Analysis",
+    "Spring back Estimation and Compensation",
+    "Tubular Bending and Hydroforming",
+    "Formability Engineering Analysis",
+  ],
+};
 
 const Consulting = (props: any) => {
   return (
     <section>
       <div
         style={{
-          background: "rgba(11, 14, 21, 1)",
+          background: "#13171c",
         }}
       >
         <Container>
-          <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
-            <h2 className="text-white text-4xl">Consulting</h2>
-            <p className="text-[#ADB5BD]">
-              DFETECH's goal is to equip our customers with the necessary
-              knowledge and management solutions to today's challenges.
-            </p>
-          </div>
+          <MainTitle
+            className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[15px]"
+            title="Consulting"
+            description="DFETECH's goal is to equip our customers with the necessary knowledge and management solutions to today's challenges."
+          />
         </Container>
         <div className="grid grid-cols-1 md:grid-cols-2 text-white ">
-          <div className="relative w-full h-[622px]">
-            <Image
-              src="/home/shuttersock-1.jpeg"
-              alt="Sheet Stamping Engineering"
-              className="opacity-60"
-              style={{ objectFit: "cover" }}
-              fill
-            />
-            <div className="absolute bottom-10 left-10 flex flex-col gap-2 z-10">
-              <CustomButton type="icon" className="p-3">
-                <LayerIcon />
-              </CustomButton>
-              <p className="text-2xl">Sheet Stamping Engineering</p>
-            </div>
-          </div>
+          <BoxConsulting
+            imageSrc={consultingData1.imageSrc}
+            imageAlt={consultingData1.imageAlt}
+            text={consultingData1.text}
+            listItems={consultingData1.listItems}
+          />
 
-          <div className="relative w-full h-[622px]">
-            <Image
-              src="/home/shuttersock-2.jpeg"
-              alt="Sheet Stamping Engineering"
-              className="opacity-60"
-              style={{ objectFit: "cover" }}
-              fill
-            />
-            <div className="absolute bottom-10 left-10 flex flex-col gap-2 z-10">
-              <CustomButton type="icon" className="p-3">
-                <LayerIcon />
-              </CustomButton>
-              <p className="text-2xl">Advanced CAE Analysis</p>
-            </div>
-          </div>
+          <BoxConsulting
+            imageSrc={consultingData2.imageSrc}
+            imageAlt={consultingData2.imageAlt}
+            text={consultingData2.text}
+            listItems={consultingData2.listItems}
+          />
         </div>
       </div>
     </section>

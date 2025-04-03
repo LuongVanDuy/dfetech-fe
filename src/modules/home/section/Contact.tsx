@@ -1,4 +1,5 @@
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
+import MainTitle from "@/components/title/MainTitle";
 import Image from "next/image";
 import React from "react";
 
@@ -15,13 +16,11 @@ const Contact = (props: any) => {
             className="w-[100%] cursor-pointer lg:hidden md:block"
           />
         </div>
-        <div className="p-4 mb-[20px] text-start">
-          <h3 className=" sm:text-[32px] lg:text-[48px] text-[#fff]">
-            Get in touch with us
-          </h3>
-          <p className="text-[#ADB5BD]">
-            Drop us a note - we look forward to hearing from you
-          </p>
+        <div className="md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]mb-[20px] text-start">
+          <MainTitle
+            title="Get in touch with us"
+            description="Drop us a note - we look forward to hearing from you"
+          />
           <form className="mt-8 flex flex-col  gap-9">
             <div className="relative">
               <select
@@ -43,9 +42,6 @@ const Contact = (props: any) => {
               >
                 Salutation *
               </label>
-              <p className=" left-0 top-full mt-1 text-red-500 text-[12px]  transition-opacity ">
-                Salutation is required!
-              </p>
             </div>
             <div className="flex lg:flex-row md:flex-col gap-6">
               <div className="relative flex-1">
