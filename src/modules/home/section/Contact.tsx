@@ -1,5 +1,6 @@
 import CustomButton from "@/components/button";
 import MainTitle from "@/components/title/MainTitle";
+import { DropDownIcon } from "@/Icons/DropDownIcon";
 import Image from "next/image";
 import React from "react";
 
@@ -29,57 +30,72 @@ const Contact = (props: any) => {
                 aria-label="country"
                 required
                 className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500 appearance-none"
+      peer-invalid:border-red-500 appearance-none cursor-pointer"
               >
-                <option value=""></option>
+                <option value="" hidden></option>
                 <option value="us">Salutation 1</option>
                 <option value="uk">Salutation 2</option>
                 <option value="vn">Salutation 3</option>
               </select>
               <label
                 className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
               >
                 Salutation *
               </label>
+              <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
+                <DropDownIcon />
+              </span>
             </div>
+
             <div className="flex lg:flex-row md:flex-col gap-6">
-              <div className="relative flex-1">
+              <div className="relative flex-1 cursor-pointer">
                 <input
                   type="text"
                   title="first_name"
                   aria-label="first_name"
                   required
                   autoComplete="off"
-                  className="w-full border-b pb-1 border-[#333333]  bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+                  placeholder=" "
+                  className="w-full border-b pb-1 cursor-pointer border-[#333333] bg-transparent pt-4 outline-none peer text-white
+      peer-invalid:border-red-500"
                 />
+
                 <label
                   htmlFor="first_name"
-                  className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+                  className="absolute  font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   First name *
                 </label>
               </div>
+
               <div className="relative flex-1">
                 <input
                   type="text"
-                  title="first_name"
-                  aria-label="first_name"
+                  title="last_name"
+                  aria-label="last_name"
                   required
                   autoComplete="off"
+                  placeholder=""
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 />
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
-                  First name *
+                  Last name *
                 </label>
               </div>
             </div>
@@ -91,17 +107,22 @@ const Contact = (props: any) => {
                   aria-label="Email"
                   required
                   autoComplete="off"
+                  placeholder=""
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 />
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   Email address *
                 </label>
               </div>
+
               <div className="relative flex-1">
                 <input
                   type="text"
@@ -109,13 +130,17 @@ const Contact = (props: any) => {
                   aria-label="contact number"
                   required
                   autoComplete="off"
+                  placeholder=""
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 />
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   Contact number *
                 </label>
@@ -129,37 +154,49 @@ const Contact = (props: any) => {
                   aria-label="organization"
                   required
                   autoComplete="off"
+                  placeholder=" "
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 />
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   Organization *
                 </label>
               </div>
+
               <div className="relative flex-1">
                 <select
                   title="job"
                   aria-label="job"
                   required
-                  className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500 appearance-none"
+                  className="w-full border-b-[2px] border-[#333333] pb-1 bg-[#000] pt-4 outline-none peer text-white
+      peer-invalid:border-red-500 appearance-none cursor-pointer"
+                  defaultValue=""
                 >
                   <option value=""></option>
                   <option value="us">Salutation 1</option>
                   <option value="uk">Salutation 2</option>
                   <option value="vn">Salutation 3</option>
                 </select>
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   Job Level *
                 </label>
+
+                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
+                  <DropDownIcon />
+                </span>
               </div>
             </div>
             <div className="flex lg:flex-row md:flex-col gap-6">
@@ -169,19 +206,25 @@ const Contact = (props: any) => {
                   aria-label="job"
                   required
                   className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500 appearance-none"
+      peer-invalid:border-red-500 appearance-none cursor-pointer"
+                  defaultValue=""
                 >
-                  <option value=""></option>
+                  <option value="" disabled hidden></option>
                   <option value="us">Yes</option>
                   <option value="uk">No</option>
                 </select>
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
-                  Are you a Students? *
+                  Are you a Student? *
                 </label>
+                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
+                  <DropDownIcon />
+                </span>
               </div>
 
               <div className="relative flex-1">
@@ -190,20 +233,26 @@ const Contact = (props: any) => {
                   aria-label="country"
                   required
                   className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500 appearance-none"
+      peer-invalid:border-red-500 appearance-none cursor-pointer"
+                  defaultValue=""
                 >
                   <option value=""></option>
                   <option value="us">Thái Lan</option>
                   <option value="uk">Việt Nam</option>
                   <option value="vn">Singapore</option>
                 </select>
+
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   Country/Region *
                 </label>
+                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
+                  <DropDownIcon />
+                </span>
               </div>
             </div>
             <div className="flex lg:flex-row md:flex-col gap-6">
@@ -214,17 +263,21 @@ const Contact = (props: any) => {
                   aria-label="city"
                   required
                   autoComplete="off"
+                  placeholder=" "
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 />
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   City *
                 </label>
               </div>
+
               <div className="relative flex-1">
                 <input
                   type="text"
@@ -232,13 +285,16 @@ const Contact = (props: any) => {
                   aria-label="postal_code"
                   required
                   autoComplete="off"
+                  placeholder=" "
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 />
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
                 >
                   PostalCode *
                 </label>
@@ -251,13 +307,16 @@ const Contact = (props: any) => {
                 aria-label="subject"
                 required
                 autoComplete="off"
+                placeholder=""
                 className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
               />
               <label
                 className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
               >
                 Subject *
               </label>
@@ -268,14 +327,17 @@ const Contact = (props: any) => {
                 aria-label="message"
                 required
                 autoComplete="off"
+                placeholder=""
                 className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer resize-none text-white
-                  peer-invalid:border-red-500"
+      peer-invalid:border-red-500 cursor-pointer"
                 rows={5}
               ></textarea>
               <label
                 className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-gray-600
-                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-gray-600"
+      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+      pointer-events-none cursor-pointer"
               >
                 Message *
               </label>
