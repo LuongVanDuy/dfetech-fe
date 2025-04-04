@@ -28,7 +28,7 @@ export default function Header() {
               <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">
                 <Image
                   alt="Logo"
-                  src="/brands/logo.svg"
+                  src="/brands/Logo.svg"
                   width={113}
                   height={54}
                 />
