@@ -6,7 +6,10 @@ import React from "react";
 
 const Contact = (props: any) => {
   return (
-    <section className="touch-section  min-h-[600px] lg:px-[120px]">
+    <section
+      className="touch-section  min-h-[600px] lg:px-[120px]"
+      id="contact"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="text-center">
           <Image

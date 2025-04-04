@@ -8,7 +8,7 @@ import MainTitle from "@/components/title/MainTitle";
 
 const TrainingWorkshop = (props: any) => {
   return (
-    <section className="bg-[#0b0e15] ">
+    <section className="bg-[#0b0e15]" id="training_workshop">
       <Container>
         <div className="flex flex-col-reverse md:grid md:grid-cols-10">
           <div className="md:col-span-6  rounded-lg">

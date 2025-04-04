@@ -44,7 +44,7 @@ const consultingData2 = {
 
 const Consulting = (props: any) => {
   return (
-    <section>
+    <section id="consulting">
       <div
         style={{
           background: "#13171c",

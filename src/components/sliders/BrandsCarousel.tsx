@@ -32,52 +32,57 @@ const BrandSlider: React.FC = () => {
       }}
     >
       <SplideSlide>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center min-h-[63px]">
           <Image
             src="/brands/brand-1.svg"
             width={133}
             height={67}
             alt="brand"
+            className="max-h-[63px] opacity-80 hover:opacity-100 transition"
           />
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center min-h-[63px] ">
           <Image
             src="/brands/brand-2.svg"
             width={133}
             height={67}
             alt="brand"
+            className="max-h-[63px] opacity-80 hover:opacity-100 transition"
           />
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center min-h-[63px] ">
           <Image
             src="/brands/brand-3.svg"
             width={133}
             height={67}
             alt="brand"
+            className="max-h-[63px] opacity-80 hover:opacity-100 transition"
           />
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center min-h-[63px] ">
           <Image
             src="/brands/brand-4.svg"
             width={133}
             height={67}
             alt="brand"
+            className="max-h-[63px] opacity-80 hover:opacity-100 transition"
           />
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center min-h-[63px] ">
           <Image
             src="/brands/brand-5.svg"
             width={133}
             height={67}
             alt="brand"
+            className="max-h-[63px] opacity-80 hover:opacity-100 transition"
           />
         </div>
       </SplideSlide>
