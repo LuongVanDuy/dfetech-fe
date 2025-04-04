@@ -2,6 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 import CustomButton from "@/components/button";
+import BrandSlider from "@/components/sliders/BrandsCarousel";
 
 const Intro = (props: any) => {
   return (
@@ -19,16 +20,16 @@ const Intro = (props: any) => {
 
       <div className="relative w-full">
         <Image
-          src="/home/home-background.jpg"
+          src="/home/view-3d-car-model.svg"
           width={1920}
-          height={1302}
+          height={1385}
           alt="Home Background"
         />
         <div className="absolute top-0 left-0 w-full h-full mix-blend-lighten">
           <Image
-            src="/home/body-background.png"
+            src="/home/view-3d-car-model-2.svg"
             width={1920}
-            height={1302}
+            height={1385}
             className="h-full"
             alt="Body Background"
           />
@@ -52,38 +53,10 @@ const Intro = (props: any) => {
             </div>
             <div className="flex flex-col items-center gap-5">
               <p className="text-lg">Trusted by Leaders across Industries</p>
-              <div className="flex gap-5">
-                <Image
-                  src={"/brands/apm.png"}
-                  width={133}
-                  height={67}
-                  alt="brand"
-                  style={{ height: "auto" }}
-                />
-                <Image
-                  src={"/brands/vinfast.png"}
-                  width={133}
-                  height={67}
-                  alt="brand"
-                />
-                <Image
-                  src={"/brands/dso.png"}
-                  width={133}
-                  height={67}
-                  alt="brand"
-                />
-                <Image
-                  src={"/brands/dsta.png"}
-                  width={133}
-                  height={67}
-                  alt="brand"
-                />
-                <Image
-                  src={"/brands/keppel.png"}
-                  width={133}
-                  height={67}
-                  alt="brand"
-                />
+              <div className="overflow-hidden max-w-[750px] mx-auto">
+                <div className="flex gap-5">
+                  <BrandSlider />
+                </div>
               </div>
             </div>
           </div>

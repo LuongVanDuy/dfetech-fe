@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import CustomButton from "@/components/button";
 import BrandSlider from "@/components/sliders/BrandsCarousel";
+import Container from "@/layouts/Container";
 
 const Intro = (props: any) => {
   return (
@@ -13,9 +14,17 @@ const Intro = (props: any) => {
           background: "linear-gradient(to bottom, #38CD60, #0E221C)",
         }}
       >
-        <h2 className="text-4xl uppercase font-bold text-center">Services</h2>
+        <div className="flex justify-center">
+          <Image
+            alt="logo"
+            width={253}
+            height={80}
+            src={"/home/Ansys-logo.png"}
+          />
+        </div>
         <p className="text-lg opacity-70 mt-5 ">
-          Next-Gen Engineering Solutions
+          DFETECH is a tier-1 partner of ANSYS, specializing in providing
+          advanced engineering simulation solutions for various industries.
         </p>
         <CustomButton>Contact Us →</CustomButton>
       </div>
@@ -39,29 +48,50 @@ const Intro = (props: any) => {
 
         <div className="absolute hidden xl:block top-[15%] text-white w-full flex justify-center">
           <div className="flex flex-col items-center gap-5">
-            <h2 className="text-4xl uppercase font-bold">Services</h2>
-            <p className="text-lg opacity-70 mt-5 ">
-              Next-Gen Engineering Solutions
+            <div className="flex justify-center">
+              <Image
+                alt="logo"
+                width={253}
+                height={80}
+                src={"/home/Ansys-logo.png"}
+              />
+            </div>
+            <p className="text-lg opacity-70 mt-5 text-center">
+              DFETECH is a tier-1 partner of ANSYS, specializing in providing
+              advanced <br />
+              engineering simulation solutions for various industries.
             </p>
             <CustomButton type="contact-home">Contact Us →</CustomButton>
           </div>
         </div>
 
-        <div className="absolute hidden xl:block  bottom-0 text-white w-full flex justify-center bg-[#0B0E1566]">
-          <div className="flex flex-col items-center gap-10 py-10">
-            <div className="flex flex-col items-center gap-5">
-              <h2 className="text-5xl">Engineers turn dream into reality</h2>
-              <p className="text-lg opacity-70 ">- Hayao Miyazaki-</p>
-            </div>
-            <div className="flex flex-col items-center gap-5">
-              <p className="text-lg">Trusted by Leaders across Industries</p>
-              <div className="overflow-hidden max-w-[750px] mx-auto">
-                <div className="flex gap-5">
-                  <BrandSlider />
-                </div>
+        <div className="absolute hidden xl:flex  bottom-0 text-white w-full  justify-between items-center bg-[#0B0E1566]">
+          <Container>
+            <div className="flex justify-between items-center ">
+              <div className="flex flex-col  gap-5 w-3/5">
+                <h2 className="text-4xl">Engineers turn dream into reality</h2>
+                <p className="text-lg opacity-70 ">
+                  The strategic partnership between the exceptional capabilities
+                  of ANSYS software and DFETECH’s high-level technical expertise
+                  enables the creation of powerful and efficient tools that
+                  empower engineers to solve complex technical challenges.
+                  Together, we not only enhance simulation performance but also
+                  foster innovation, helping our clients achieve groundbreaking
+                  progress in research, development, and manufacturing.
+                </p>
+                <CustomButton className="mt-10">More Info</CustomButton>
+              </div>
+              <div className="w-2/5 flex justify-center items-center">
+                <Image
+                  width={500}
+                  height={550}
+                  alt="Reward"
+                  className="translate-y-[-10%]"
+                  src={"/home/Ansys-reward.png"}
+                />
               </div>
             </div>
-          </div>
+          </Container>
         </div>
       </div>
 

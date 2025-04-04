@@ -6,11 +6,11 @@ import CustomButton from "../button";
 
 interface BoxNormalProps {
   title: string;
-  date: string;
+  date?: string;
   imageSrc: string;
   description?: string;
   icon?: any;
-  type?: "normal" | "large" | "rounded";
+  type?: "normal" | "large" | "rounded" | "ansys";
   className?: string;
 }
 
@@ -33,7 +33,7 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
       >
         {icon && (
           <CustomButton
-            className="!absolute top-[-15%] right-[15%]"
+            className={`!absolute top-[-15%] right-[15%] rounded-full`}
             type="icon"
           >
             {icon}
@@ -55,7 +55,10 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
               {title}
             </a>
           </h3>
-          <MoreIcon className="cursor-pointer" />
+          <MoreIcon
+            className={`cursor-pointer   `}
+            fill={type === "ansys" ? "#2C7656" : ""}
+          />
         </div>
         <p className="text-gray-600 text-sm mt-2 line-clamp-2">{description}</p>
       </div>
