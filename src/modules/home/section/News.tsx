@@ -57,7 +57,7 @@ const eventData = [
 
 const News = (props: any) => {
   return (
-    <section>
+    <section className="bg-white" id="news">
       <Container>
         <div className="border-l border-r border-[#0b0e15]/10">
           <div className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">

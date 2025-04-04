@@ -53,18 +53,36 @@ const TrainingCarousel = () => {
           }}
           navigation={false}
           ref={swiperRef}
-          className="w-full overflow-hidden"
+          className="w-full md:w-[calc(100%+64px)] overflow-hidden"
         >
           <SwiperSlide>
-            <div className="flex items-center px-[45px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
+            <div className="flex items-center px-[24px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
               <span className="text-[#fff] text-[60px]">01</span>
-              <p className="text-[#ADB5BD]">Introduction to LS-DYNA®</p>
+              <p className="text-[#ADB5BD] text-[18px]">
+                Introduction to LS-DYNA®
+              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex items-center px-[45px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
+            <div className="flex items-center px-[24px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
               <span className="text-[#fff] text-[60px]">02</span>
-              <p className="text-[#ADB5BD]">
+              <p className="text-[#ADB5BD] text-[18px]">
+                Introduction to Drop Test Analysis in LS-DYNA®
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex items-center px-[24px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929]">
+              <span className="text-[#fff] text-[60px]">03</span>
+              <p className="text-[#ADB5BD] text-[18px]">
+                Introduction to Drop Test Analysis in LS-DYNA®
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex items-center px-[24px] h-[124px] gap-4 bg-white/5 rounded-lg border-[1px] border-[#2C2929] md:mr-[64px]">
+              <span className="text-[#fff] text-[60px]">04</span>
+              <p className="text-[#ADB5BD] text-[18px]">
                 Introduction to Drop Test Analysis in LS-DYNA®
               </p>
             </div>
