@@ -25,16 +25,16 @@ const Intro = (props: any) => {
 
       <div className="relative w-full">
         <Image
-          src="/home/home-background.jpg"
+          src="/home/view-3d-car-model.svg"
           width={1920}
-          height={1302}
+          height={1385}
           alt="Home Background"
         />
         <div className="absolute top-0 left-0 w-full h-full mix-blend-lighten">
           <Image
-            src="/home/body-background.png"
+            src="/home/view-3d-car-model-2.svg"
             width={1920}
-            height={1302}
+            height={1385}
             className="h-full"
             alt="Body Background"
           />
