@@ -95,7 +95,7 @@ const SoftwareSolutionContent = (props: any) => {
         }}
       >
         <Container>
-          <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+          <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
             <h2 className="text-white text-4xl">Consulting</h2>
             <p className="text-[#ADB5BD]">
               DFETECH's goal is to equip our customers with the necessary
@@ -103,7 +103,7 @@ const SoftwareSolutionContent = (props: any) => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+          <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
             <div className="grid grid-cols-1 gap-8">
               {dataLarge.map((item, index) => (
                 <BoxSoftware

@@ -27,7 +27,7 @@ const Industries = (props: any) => {
     <section>
       <Container>
         <div className="border-l border-r border-[#0b0e15]/10">
-          <div className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
+          <div className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
             <div className="flex flex-col items-center justify-center mb-[40px]">
               <p className="text-[#2C7656]">Industries</p>
               <h2 className="text-[40px] leading-[48px]">

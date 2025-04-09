@@ -84,6 +84,12 @@ html {
   background-color: #fff;
 }
 
+@media (min-width: 375px) {
+  .hide-bt button {
+    display: none;
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

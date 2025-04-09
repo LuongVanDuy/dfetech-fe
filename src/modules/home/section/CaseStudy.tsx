@@ -18,7 +18,7 @@ const CaseStudy = (props: any) => {
       >
         <div className="bg-[#0B0E1566] py-20">
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-white mx-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10  text-white px-[16px] md:px-[64px]">
               <div className="order-last md:order-first flex justify-center items-center">
                 <div className="flex flex-col gap-5">
                   <MainTitle

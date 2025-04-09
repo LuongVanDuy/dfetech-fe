@@ -4,7 +4,6 @@ import React from "react";
 
 interface BoxSolutionProps {
   imageUrl: string;
-  height?: string;
   linkUrl?: string;
   altText?: string;
   effect?: "zoom" | "none";
@@ -14,7 +13,6 @@ interface BoxSolutionProps {
 
 const BoxSolution: React.FC<BoxSolutionProps> = ({
   imageUrl,
-  height = "100%",
   linkUrl = "",
   altText = "Image",
   effect = "none",
@@ -23,10 +21,7 @@ const BoxSolution: React.FC<BoxSolutionProps> = ({
 }) => {
   return (
     <div className="h-auto mx-auto overflow-hidden relative">
-      <div
-        className="bg-center bg-cover h-auto overflow-hidden relative group"
-        style={{ paddingTop: height }}
-      >
+      <div className="pt-[135%] md:pt-[103.67%] bg-center bg-cover h-auto overflow-hidden relative group">
         <a
           href={linkUrl}
           className="absolute inset-0 transition-transform duration-300 group-hover:scale-[1.2]"

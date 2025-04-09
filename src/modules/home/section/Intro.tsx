@@ -55,7 +55,9 @@ const Intro = (props: any) => {
         <div className="absolute hidden xl:block bottom-0 text-white w-full flex justify-center bg-[#0B0E1566] backdrop-blur-[15px]">
           <div className="flex flex-col items-center gap-[64px] py-[64px]">
             <div className="flex flex-col items-center gap-5">
-              <h2 className="text-5xl">Engineers turn dream into reality</h2>
+              <h2 className="text-[32px] leading-[38px] font-medium md:text-[48px] md:leading-[57px]">
+                Engineers turn dream into reality
+              </h2>
               <p className="text-lg opacity-70 ">- Hayao Miyazaki-</p>
             </div>
             <div className="flex flex-col items-center gap-5">
@@ -77,7 +79,9 @@ const Intro = (props: any) => {
         }}
       >
         <div className="flex flex-col items-center gap-2">
-          <p className="text-5xl">Engineers turn dream into reality</p>
+          <h2 className="text-[32px] leading-[38px] font-medium md:text-[48px] md:leading-[57px]">
+            Engineers turn dream into reality
+          </h2>
           <p className="text-lg opacity-70 ">- Hayao Miyazaki-</p>
         </div>
         <div className="flex flex-col items-center gap-2">

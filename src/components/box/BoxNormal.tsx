@@ -50,7 +50,7 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
           >
             <a
               href=""
-              className="hover:text-[rgba(44,118,86,1)] transition-colors duration-300"
+              className="text-[#212529] hover:text-[rgba(44,118,86,1)] transition-colors duration-300"
             >
               {title}
             </a>

@@ -18,7 +18,7 @@ const Trusted = (props: any) => {
   return (
     <section className="bg-[#0B0E15]" ref={ref}>
       <Container>
-        <div className="px-5 md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]">
+        <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]">
           <h2 className="text-center lg:text-[32px] sm:text-[24px] text-[#ADB5BD] md:mb-[64px] sm:mb-[40px]">
             We are Trusted 15+ Countries Worldwide
           </h2>

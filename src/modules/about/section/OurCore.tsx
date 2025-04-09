@@ -11,7 +11,7 @@ const OurCore = (props: any) => {
       <div className="bg-[#0B0E1599]">
         <div className="bg-[#0B0E1566] py-20">
           <Container>
-            <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+            <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
               <h2 className="text-white text-4xl">Our core value</h2>
               <p className="text-[#ADB5BD]">
                 The six core values that form the foundation for DFETECH's
@@ -19,7 +19,7 @@ const OurCore = (props: any) => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3  gap-14 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+            <div className="grid grid-cols-3  gap-14 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
               <BoxShadow
                 title="Mision"
                 icon={<StarIcon />}

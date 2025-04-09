@@ -12,7 +12,7 @@ const TrainingWorkshop = (props: any) => {
       <Container>
         <div className="flex flex-col-reverse md:grid md:grid-cols-10">
           <div className="md:col-span-6  rounded-lg">
-            <div className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+            <div className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
               <h2 className="text-[#fff] md:text-[45px] sm:text-[35px] leading-[55px] mb-5">
                 Training & Workshop
               </h2>

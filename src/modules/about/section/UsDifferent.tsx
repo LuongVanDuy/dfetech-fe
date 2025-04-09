@@ -20,7 +20,7 @@ const UsDifferent = (props: any) => {
       >
         <div className="bg-[#0B0E1566] py-20">
           <Container>
-            <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+            <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
               <h2 className="text-white text-4xl">What’s make us different?</h2>
               <p className="text-[#ADB5BD]">
                 We not only implement cutting-edge engineering solutions but
@@ -34,7 +34,7 @@ const UsDifferent = (props: any) => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3  gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+            <div className="grid grid-cols-3  gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
               <BoxDifferent title="20+" description="Employees" />
               <BoxDifferent title="20+" description="Employees" />
               <BoxDifferent title="20+" description="Employees" />

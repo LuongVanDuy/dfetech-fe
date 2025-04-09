@@ -71,17 +71,21 @@ const SolutionsCarousel = () => {
     <div>
       <Swiper
         ref={swiperRef}
-        slidesPerView={3.2}
+        slidesPerView={1.3}
         spaceBetween={0}
         pagination={false}
         modules={[Pagination]}
         className="SolutionsCarousel"
+        breakpoints={{
+          768: {
+            slidesPerView: 3.2,
+          },
+        }}
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
             <BoxSolution
               imageUrl={item.imageUrl}
-              height="103.67%"
               effect="zoom"
               title={item.title}
               link={item.link}
@@ -90,7 +94,7 @@ const SolutionsCarousel = () => {
         ))}
       </Swiper>
 
-      <div className="flex justify-between px-5 md:px-20 py-[24px] md:pt-[48px] md:pb-[64px]  md:justify-center">
+      <div className="flex justify-between px-[16px] md:px-20 py-[24px] md:pt-[48px] md:pb-[64px]  md:justify-center">
         <div className="flex gap-[16px]">
           <CustomButton type="icon" onClick={handlePrev}>
             <ChevronLeftIcon />
