@@ -20,7 +20,7 @@ const OurJourney = (props: any) => {
       >
         <div className="bg-[#0B0E1566] py-20">
           <Container>
-            <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] w-full md:w-1/2">
+            <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] w-full md:w-1/2">
               <h2 className="text-white text-4xl">Consulting</h2>
               <p className="text-[#ADB5BD]">
                 DFETECH’s journey began over 20 years ago, driven by our

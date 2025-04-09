@@ -12,7 +12,7 @@ const TrainingWorkshop = (props: any) => {
       <Container>
         <div className="flex flex-col-reverse md:grid md:grid-cols-10">
           <div className="md:col-span-6  rounded-lg">
-            <div className="px-5 md:px-[64px] py-[36px] md:py-[120px] md:pb-[64px]">
+            <div className="px-[16px] md:px-[64px] py-[36px] md:py-[120px] md:pb-[64px]">
               <MainTitle
                 title="Training & Workshop"
                 description="DFETECH offers on a variety of training courses. Training courses are conducted by our team of application experts and doctorate holders with application and industrial professional experience"

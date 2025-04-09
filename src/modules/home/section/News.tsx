@@ -60,9 +60,11 @@ const News = (props: any) => {
     <section className="bg-white" id="news">
       <Container>
         <div className="border-l border-r border-[#0b0e15]/10">
-          <div className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
+          <div className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
             <div className="flex justify-between items-center mb-[40px]">
-              <h2 className="text-[40px] leading-[48px]">News</h2>
+              <h2 className="text-[#212529] text-[40px] leading-[48px]">
+                News
+              </h2>
               <CustomButton type="primary" className="md:block sm:hidden">
                 See all →
               </CustomButton>
@@ -82,9 +84,11 @@ const News = (props: any) => {
           </div>
           <div className="border-t-[1px]">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="px-5 md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]  border-r-[1px] ">
+              <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]  border-r-[1px] ">
                 <div className="flex justify-between items-center  mb-[30px]">
-                  <h2 className="md:text-[40px] sm:text-[32px] ">Academy</h2>
+                  <h2 className="text-[#212529] md:text-[40px] sm:text-[32px] ">
+                    Academy
+                  </h2>
                   <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
                 <BoxNormal
@@ -95,9 +99,9 @@ const News = (props: any) => {
                   type="large"
                 />
               </div>
-              <div className="px-5 md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px] ">
+              <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px] ">
                 <div className="flex justify-between items-center mb-[30px]">
-                  <h2 className="text-[40px]">Events</h2>
+                  <h2 className="text-[#212529] text-[40px]">Events</h2>
                   <MoreIcon width={20} height={20} fill="#2C7656" />
                 </div>
                 <div className="flex flex-col gap-[48px]">

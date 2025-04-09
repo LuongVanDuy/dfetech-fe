@@ -52,7 +52,7 @@ const Consulting = (props: any) => {
       >
         <Container>
           <MainTitle
-            className="px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[15px]"
+            className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[15px]"
             title="Consulting"
             description="DFETECH's goal is to equip our customers with the necessary knowledge and management solutions to today's challenges."
           />

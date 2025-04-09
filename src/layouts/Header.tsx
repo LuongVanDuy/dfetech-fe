@@ -22,7 +22,7 @@ export default function Header() {
     <header id="header">
       <div className="fixed z-50 w-full bg-[#0B0E1566] backdrop-blur-[100px]">
         <Container>
-          <div className="flex justify-between xl:justify-between px-[24px] py-[16px]">
+          <div className="flex justify-between xl:justify-between px-[16px] py-[16px]">
             <div className="flex items-center gap-[48px]">
               <MenuIcon className="block xl:hidden" />
               <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">

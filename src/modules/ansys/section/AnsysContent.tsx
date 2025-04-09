@@ -53,7 +53,7 @@ const AnsysContent = (props: any) => {
         }}
       >
         <Container>
-          <div className="flex flex-col gap-5 px-5 md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
+          <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-[64px]">
               {newsData.map((news, index) => (
                 <BoxNormal key={index} {...news} type="ansys" />
