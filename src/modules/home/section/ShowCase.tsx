@@ -4,30 +4,32 @@ import CustomButton from "@/components/button";
 import Image from "next/image";
 import BrandSlider from "@/components/sliders/BrandsCarousel";
 
-const Intro = (props: any) => {
+const ShowCase = (props: any) => {
   return (
     <section>
       <div className="relative w-full">
-        <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px]">
-          <div className="flex flex-col items-center gap-[16px]">
-            <h2 className="font-teko font-[var(--font-teko)] text-[68px] leading-[72px] md:text-[80px] md:leading-[84px] font-medium tracking-normal text-center uppercase">
-              Dyna Forming Engineering <br /> & Technology
-            </h2>
+        <div>
+          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px]">
+            <div className="flex flex-col items-center gap-[16px]">
+              <h2 className="font-teko font-[var(--font-teko)] text-[68px] leading-[72px] md:text-[80px] md:leading-[84px] font-medium tracking-normal text-center uppercase">
+                Dyna Forming Engineering <br /> & Technology
+              </h2>
 
-            <p className="text-lg opacity-70 mb-5 ">
-              Next-Gen Engineering Solutions
-            </p>
-            <CustomButton type="">Contact Us →</CustomButton>
+              <p className="text-lg opacity-70 mb-5 ">
+                Next-Gen Engineering Solutions
+              </p>
+              <CustomButton type="">Contact Us →</CustomButton>
+            </div>
           </div>
-        </div>
 
-        <Image
-          src="/home/view-3d-car-model.svg"
-          width={1920}
-          height={1385}
-          alt="Home Background"
-          className="relative mix-blend-lighten"
-        />
+          <Image
+            src="/home/view-3d-car-model.svg"
+            width={1920}
+            height={1385}
+            alt="Home Background"
+            className="relative mix-blend-lighten"
+          />
+        </div>
 
         <div className="relative xl:absolute xl:block bottom-0 text-white w-full flex justify-center bg-[#0B0E1566] backdrop-blur-[15px]">
           <div className="flex flex-col items-center gap-[64px] p-[48px_16px] md:py-[64px] md:px-0">
@@ -54,4 +56,4 @@ const Intro = (props: any) => {
   );
 };
 
-export { Intro };
+export { ShowCase };

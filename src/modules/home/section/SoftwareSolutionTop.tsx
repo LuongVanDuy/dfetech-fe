@@ -3,7 +3,7 @@ import Container from "@/layouts/Container";
 import SolutionsCarousel from "@/components/sliders/SolutionsCarousel";
 import MainTitle from "@/components/title/MainTitle";
 
-const SoftwareSolutions = (props: any) => {
+const SoftwareSolutionTop = (props: any) => {
   return (
     <section
       className="bg-gradient-to-b from-[#0E1C1D] to-[#0B1115] backdrop-blur-[48px]"
@@ -22,4 +22,4 @@ const SoftwareSolutions = (props: any) => {
   );
 };
 
-export { SoftwareSolutions };
+export { SoftwareSolutionTop };

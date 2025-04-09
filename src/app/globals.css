@@ -28,6 +28,10 @@ section {
   position: relative;
 }
 
+select {
+  background-color: transparent;
+}
+
 .font-teko {
   font-family: var(--font-teko);
 }

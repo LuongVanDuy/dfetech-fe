@@ -8,7 +8,7 @@ import { DegressIcon } from "@/Icons/DegressIcon";
 import Container from "@/layouts/Container";
 import MainTitle from "@/components/title/MainTitle";
 
-const CaseStudy = (props: any) => {
+const SoftwareSolutionsBot = (props: any) => {
   return (
     <section className="bg-gradient-to-b from-[#0E1C1D] to-[#0B1115] backdrop-blur-[48px]">
       <Container>
@@ -56,4 +56,4 @@ const CaseStudy = (props: any) => {
   );
 };
 
-export { CaseStudy };
+export { SoftwareSolutionsBot };

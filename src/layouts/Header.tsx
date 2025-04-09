@@ -1,12 +1,12 @@
 "use client";
 
 import CustomButton from "@/components/button";
-import { EnglandIcon } from "@/Icons/EnglandIcon";
 import { MenuIcon } from "@/Icons/MenuIcon";
 import { SearchIcon } from "@/Icons/SearchIcon";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
+import { USIcon } from "@/Icons/USIcon";
 
 export default function Header() {
   const menuHeader = [
@@ -52,7 +52,7 @@ export default function Header() {
 
             <div className="flex items-center gap-5">
               <SearchIcon />
-              <EnglandIcon />
+              <USIcon />
 
               <CustomButton>Contact Us</CustomButton>
             </div>
