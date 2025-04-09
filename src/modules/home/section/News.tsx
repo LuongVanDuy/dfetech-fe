@@ -59,57 +59,51 @@ const News = (props: any) => {
   return (
     <section className="bg-white" id="news">
       <Container>
-        <div className="border-l border-r border-[#0b0e15]/10">
-          <div className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
-            <div className="flex justify-between items-center mb-[40px]">
-              <h2 className="text-[#212529] text-[40px] leading-[48px]">
-                News
-              </h2>
-              <CustomButton type="primary" className="md:block sm:hidden">
-                See all →
-              </CustomButton>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[64px]">
-              {newsData.map((news, index) => (
-                <BoxNormal key={index} {...news} />
-              ))}
-            </div>
-            <CustomButton
-              type="primary"
-              className="min-w-[30px] !text-[14px] !py-[8px] !px-[20px]  md:hidden sm:block"
-            >
+        <div className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] ">
+          <div className="flex justify-between items-center mb-[40px]">
+            <h2 className="text-[#212529] text-[40px] leading-[48px]">News</h2>
+            <CustomButton type="primary" className="md:block sm:hidden">
               See all →
             </CustomButton>
           </div>
-          <div className="border-t-[1px]">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]  border-r-[1px] ">
-                <div className="flex justify-between items-center  mb-[30px]">
-                  <h2 className="text-[#212529] md:text-[40px] sm:text-[32px] ">
-                    Academy
-                  </h2>
-                  <MoreIcon width={20} height={20} fill="#2C7656" />
-                </div>
-                <BoxNormal
-                  imageSrc="/posts/post-7.svg"
-                  title="Ansys Academic"
-                  date="19 Jan 2022"
-                  description="Utilized by Students, Educators and Researchers Across the World. The demand for graduates with engineering simulation skills is exploding. This is largely due to the widespread use of simulation across product development and optimization workflows."
-                  type="large"
-                />
-              </div>
-              <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px] ">
-                <div className="flex justify-between items-center mb-[30px]">
-                  <h2 className="text-[#212529] text-[40px]">Events</h2>
-                  <MoreIcon width={20} height={20} fill="#2C7656" />
-                </div>
-                <div className="flex flex-col gap-[48px]">
-                  {eventData.map((event, index) => (
-                    <BoxVertical key={index} {...event} />
-                  ))}
-                </div>
-              </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[64px]">
+            {newsData.map((news, index) => (
+              <BoxNormal key={index} {...news} />
+            ))}
+          </div>
+          <CustomButton
+            type="primary"
+            className="min-w-[30px] !text-[14px] !py-[8px] !px-[20px]  md:hidden sm:block"
+          >
+            See all →
+          </CustomButton>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px] ">
+            <div className="flex justify-between items-center  mb-[30px]">
+              <h2 className="text-[#212529] md:text-[40px] sm:text-[32px] ">
+                Academy
+              </h2>
+              <MoreIcon width={20} height={20} fill="#2C7656" />
+            </div>
+            <BoxNormal
+              imageSrc="/posts/post-7.svg"
+              title="Ansys Academic"
+              date="19 Jan 2022"
+              description="Utilized by Students, Educators and Researchers Across the World. The demand for graduates with engineering simulation skills is exploding. This is largely due to the widespread use of simulation across product development and optimization workflows."
+              type="large"
+            />
+          </div>
+          <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px] ">
+            <div className="flex justify-between items-center mb-[30px]">
+              <h2 className="text-[#212529] text-[40px]">Events</h2>
+              <MoreIcon width={20} height={20} fill="#2C7656" />
+            </div>
+            <div className="flex flex-col gap-[48px]">
+              {eventData.map((event, index) => (
+                <BoxVertical key={index} {...event} />
+              ))}
             </div>
           </div>
         </div>

@@ -42,7 +42,7 @@ const BoxNormal: React.FC<BoxNormalProps> = ({
         <p className="text-sm text-green-600">{date}</p>
         <div className="flex items-center justify-between cursor-pointer">
           <h3
-            className={`font-[600] mt-1 ${
+            className={`font-[600] text-[#212529] mt-1 ${
               type === "large"
                 ? "text-[32px] leading-[38px]"
                 : "text-[24px] leading-[28.8px]"

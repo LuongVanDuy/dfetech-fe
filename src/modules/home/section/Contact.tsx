@@ -32,7 +32,7 @@ const Contact = (props: any) => {
                 title="country"
                 aria-label="country"
                 required
-                className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
+                className="w-full border-b-[2px] border-[#333333] pb-2  pt-4 outline-none peer text-white
       peer-invalid:border-red-500 appearance-none cursor-pointer"
               >
                 <option value="" hidden></option>
@@ -178,7 +178,7 @@ const Contact = (props: any) => {
                   title="job"
                   aria-label="job"
                   required
-                  className="w-full border-b-[2px] border-[#333333] pb-1 bg-[#000] pt-4 outline-none peer text-white
+                  className="w-full border-b-[2px] border-[#333333] pb-1  pt-4 outline-none peer text-white
       peer-invalid:border-red-500 appearance-none cursor-pointer"
                   defaultValue=""
                 >
@@ -208,7 +208,7 @@ const Contact = (props: any) => {
                   title="job"
                   aria-label="job"
                   required
-                  className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
+                  className="w-full border-b-[2px] border-[#333333] pb-2  pt-4 outline-none peer text-white
       peer-invalid:border-red-500 appearance-none cursor-pointer"
                   defaultValue=""
                 >
@@ -235,7 +235,7 @@ const Contact = (props: any) => {
                   title="country"
                   aria-label="country"
                   required
-                  className="w-full border-b-[2px] border-[#333333] pb-2 bg-[#000] pt-4 outline-none peer text-white
+                  className="w-full border-b-[2px] border-[#333333] pb-2  pt-4 outline-none peer text-white
       peer-invalid:border-red-500 appearance-none cursor-pointer"
                   defaultValue=""
                 >

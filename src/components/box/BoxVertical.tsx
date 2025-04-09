@@ -31,7 +31,7 @@ const BoxVertical: React.FC<BoxVerticalProps> = ({
           <h3 className="text-[24px] leading-[28.8px] mb-3 cursor-pointer sm:line-clamp-2 md:line-clamp-3">
             <a
               href=""
-              className="hover:text-[rgba(44,118,86,1)] transition-colors duration-300"
+              className="text-[#212529] hover:text-[rgba(44,118,86,1)] transition-colors duration-300"
             >
               {title}
             </a>

@@ -2,7 +2,6 @@
 
 import { HomePage } from "@/modules/home";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function Home() {
   const handleScrollToSection = (id: string) => {
