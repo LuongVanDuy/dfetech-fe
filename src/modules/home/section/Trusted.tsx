@@ -16,7 +16,10 @@ const Trusted = (props: any) => {
   }, [isInView, hasAnimated]);
 
   return (
-    <section className="bg-[#0B0E15]" ref={ref}>
+    <section
+      className="bg-[rgba(11, 14, 21, 0.4)] backdrop-blur-[48px]"
+      ref={ref}
+    >
       <Container>
         <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]">
           <h2 className="text-center lg:text-[32px] sm:text-[24px] text-[#ADB5BD] md:mb-[64px] sm:mb-[40px]">

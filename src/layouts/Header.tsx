@@ -23,16 +23,21 @@ export default function Header() {
       <div className="fixed z-50 w-full bg-[#0B0E1566] backdrop-blur-[100px]">
         <Container>
           <div className="flex justify-between xl:justify-between px-[16px] py-[16px]">
-            <div className="flex items-center gap-[48px]">
+            <div className="flex items-center gap-[8px] xl:gap-[48px]">
               <MenuIcon className="block xl:hidden" />
-              <div className="w-[60px] h-[30px] md:w-[113px] md:h-[54px]">
+              <div
+                className="w-[113px] h-[54px] cursor-pointer"
+                onClick={() => (window.location.href = "/")}
+              >
                 <Image
                   alt="Logo"
                   src="/brands/Logo.svg"
                   width={113}
                   height={54}
+                  className="w-[113px] h-[54px]"
                 />
               </div>
+
               {menuHeader?.map((item, index) => {
                 return (
                   <div
