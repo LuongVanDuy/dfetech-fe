@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="text-center  text-[#fff]  bg-[#0B0E15]">
+    <footer className=" bg-[rgba(11, 14, 21, 1)] backdrop-blur-[48px] text-center  text-[#fff]">
       <div className="mx-auto lg:px-[120px] md:pt-0 sm:pt-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 border-l-[0.5px] border-r-[0.5px] border-[#181818] sm:[&>:nth-child(1)]:sm:col-span-2 sm:[&>:nth-child(4)]:sm:col-span-2 md:[&>:nth-child(1)]:md:col-span-1 md:[&>:nth-child(4)]:md:col-span-1">
           <div className="md:pl-[45px] md:py-[45px] sm:pl-[15px] sm:py-[15px] text-start border-r-[0.5px] border-[#181818]">
@@ -47,7 +47,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="md:p-[45px] sm:p-[15px] text-start">
+          <div className="md:p-[45px] sm:p-[15px] text-start sm:border-t-[0.5px] border-[#181818]">
             <h2 className="text-[#fff] mb-2">Terms</h2>
             <ul className="flex flex-col gap-2">
               <li className="text-[#ADB5BD]">

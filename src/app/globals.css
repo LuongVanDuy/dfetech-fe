@@ -16,8 +16,16 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: rgba(11, 14, 21, 1);
   font-family: var(--font-custom), sans-serif;
+}
+
+#main {
+  background-color: rgba(11, 14, 21, 1);
+}
+
+section {
+  position: relative;
 }
 
 .font-teko {

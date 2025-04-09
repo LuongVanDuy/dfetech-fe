@@ -44,34 +44,31 @@ const consultingData2 = {
 
 const Consulting = (props: any) => {
   return (
-    <section id="consulting">
-      <div
-        style={{
-          background: "#13171c",
-        }}
-      >
-        <Container>
-          <MainTitle
-            className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[15px]"
-            title="Consulting"
-            description="DFETECH's goal is to equip our customers with the necessary knowledge and management solutions to today's challenges."
-          />
-        </Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 text-white ">
-          <BoxConsulting
-            imageSrc={consultingData1.imageSrc}
-            imageAlt={consultingData1.imageAlt}
-            text={consultingData1.text}
-            listItems={consultingData1.listItems}
-          />
+    <section
+      className="bg-[rgba(255,255,255,0.03)] backdrop-blur-[48px]"
+      id="consulting"
+    >
+      <Container>
+        <MainTitle
+          className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[15px]"
+          title="Consulting"
+          description="DFETECH's goal is to equip our customers with the necessary knowledge and management solutions to today's challenges."
+        />
+      </Container>
+      <div className="grid grid-cols-1 md:grid-cols-2 text-white ">
+        <BoxConsulting
+          imageSrc={consultingData1.imageSrc}
+          imageAlt={consultingData1.imageAlt}
+          text={consultingData1.text}
+          listItems={consultingData1.listItems}
+        />
 
-          <BoxConsulting
-            imageSrc={consultingData2.imageSrc}
-            imageAlt={consultingData2.imageAlt}
-            text={consultingData2.text}
-            listItems={consultingData2.listItems}
-          />
-        </div>
+        <BoxConsulting
+          imageSrc={consultingData2.imageSrc}
+          imageAlt={consultingData2.imageAlt}
+          text={consultingData2.text}
+          listItems={consultingData2.listItems}
+        />
       </div>
     </section>
   );
