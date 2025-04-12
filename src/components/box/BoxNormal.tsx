@@ -1,5 +1,5 @@
 import BoxImage from "@/components/images/BoxImage";
-import { MoreIcon } from "@/Icons/MoreIcon";
+import { MoreIcon } from "@/components/icons/MoreIcon";
 
 import React from "react";
 import CustomButton from "../button";

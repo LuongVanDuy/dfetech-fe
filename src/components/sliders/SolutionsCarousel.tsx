@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import CustomButton from "@/components/button";
-import { ChevronLeftIcon } from "@/Icons/ChevronLeftIcon";
-import { ChevronRightIcon } from "@/Icons/ChevronRightIcon";
+import { ChevronLeftIcon } from "@/components/icons/ChevronLeftIcon";
+import { ChevronRightIcon } from "@/components/icons/ChevronRightIcon";
 import BoxSolution from "../box/BoxSolution";
 
 const SolutionsCarousel = () => {

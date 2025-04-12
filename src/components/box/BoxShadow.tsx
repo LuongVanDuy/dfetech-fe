@@ -1,4 +1,4 @@
-import { FavoriteChartIcon } from "@/Icons/FavoriteChart";
+import { FavoriteChartIcon } from "@/components/icons/FavoriteChart";
 import Image from "next/image";
 import CustomButton from "../button";
 
