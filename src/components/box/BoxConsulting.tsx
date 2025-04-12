@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CustomButton from "../button";
-import { LayerIcon } from "@/Icons/LayerIcon";
+import { LayerIcon } from "@/components/icons/LayerIcon";
 
 interface BoxConsultingProps {
   imageSrc: string;

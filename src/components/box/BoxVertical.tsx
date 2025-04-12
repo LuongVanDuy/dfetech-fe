@@ -1,8 +1,8 @@
 import React from "react";
 
 import CustomButton from "@/components/button";
-import { TimeIcon } from "@/Icons/TimeIcon";
-import { DateIcon } from "@/Icons/DateIcon";
+import { TimeIcon } from "@/components/icons/TimeIcon";
+import { DateIcon } from "@/components/icons/DateIcon";
 import BoxImage from "@/components/images/BoxImage";
 
 interface BoxVerticalProps {
