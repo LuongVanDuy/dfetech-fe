@@ -1,5 +1,7 @@
 export default {
-  pageList: () => "pageTranslation",
-  pageDetail: (id: string) => `pageTranslation/${id}`,
-  pageUpdate: (id: string) => `pageTranslation/${id}`,
+  pageList: () => "pages",
+  pageDetail: (id: string) => `pages/${id}`,
+  pageUpdate: (id: string) => `pages/${id}`,
+  pageDetailClient: (id: string, code: string) =>
+    `public/pages?pageSlug=${id}&langCode=${code}`,
 };

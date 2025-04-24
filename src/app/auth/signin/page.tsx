@@ -11,11 +11,30 @@ interface LoginFormValues {
   password: string;
 }
 
+const formItemLayout = {
+  labelCol: {
+    xs: {
+      span: 24,
+    },
+    sm: {
+      span: 24,
+    },
+  },
+  wrapperCol: {
+    xs: {
+      span: 24,
+    },
+    sm: {
+      span: 24,
+    },
+  },
+};
+
 const LoginAdmin: React.FC = () => {
   const [messageApi, contextHolder] = message.useMessage();
   const router = useRouter();
 
-  const handleSubmit = async (values: LoginFormValues) => {
+  const onFinish = async (values: LoginFormValues) => {
     const { email, password } = values;
 
     const result = await signIn("credentials", {
@@ -28,23 +47,17 @@ const LoginAdmin: React.FC = () => {
       const response = await fetch("/api/auth/session");
       const session = await response.json();
 
-      if (
-        session?.user?.type === "SYSTEM" &&
-        session?.user?.isSuperAdmin === 1
-      ) {
+      if (session?.user?.type === "SYSTEM" && session?.user?.isSuperAdmin === 1) {
         router.push("/admin");
-      } else {
-        await signOut({ redirect: false });
-        messageApi.error({
-          content: "Bạn không có quyền truy cập trang này!",
-        });
       }
     } else {
+      const errorMessage = result?.error || "Đăng nhập thất bại, vui lòng kiểm tra lại!";
       messageApi.error({
-        content: "Đăng nhập thất bại, vui lòng kiểm tra lại!",
+        content: errorMessage,
       });
     }
   };
+
   return (
     <>
       {contextHolder}
@@ -52,46 +65,17 @@ const LoginAdmin: React.FC = () => {
         <div>
           <div className="flex items-end pt-[20px] justify-center mb-[15px]"></div>
 
-          <Form
-            name="admin_login"
-            initialValues={{ remember: true }}
-            onFinish={handleSubmit}
-            autoComplete="off"
-            className="min-w-[400px]"
-          >
-            <Form.Item<LoginFormValues>
-              name="email"
-              rules={[
-                { required: true, message: "Vui lòng nhập tài khoản của bạn!" },
-              ]}
-            >
-              <Input
-                size="large"
-                placeholder="Tài khoản"
-                prefix={<UserOutlined />}
-              />
+          <Form name="admin_login" initialValues={{ remember: true }} onFinish={onFinish} autoComplete="off" className="min-w-[400px]">
+            <Form.Item<LoginFormValues> name="email" rules={[{ required: true, message: "Vui lòng nhập tài khoản của bạn!" }]}>
+              <Input size="large" placeholder="Tài khoản" prefix={<UserOutlined />} />
             </Form.Item>
 
-            <Form.Item<LoginFormValues>
-              name="password"
-              rules={[
-                { required: true, message: "Vui lòng nhập mật khẩu của bạn!" },
-              ]}
-            >
-              <Input.Password
-                size="large"
-                placeholder="Mật khẩu"
-                prefix={<LockOutlined />}
-              />
+            <Form.Item<LoginFormValues> name="password" rules={[{ required: true, message: "Vui lòng nhập mật khẩu của bạn!" }]}>
+              <Input.Password size="large" placeholder="Mật khẩu" prefix={<LockOutlined />} />
             </Form.Item>
 
             <Form.Item>
-              <Button
-                size="large"
-                type="primary"
-                htmlType="submit"
-                style={{ width: "100%" }}
-              >
+              <Button size="large" type="primary" htmlType="submit" style={{ width: "100%" }}>
                 Đăng nhập
               </Button>
             </Form.Item>

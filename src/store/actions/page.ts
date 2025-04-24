@@ -1,4 +1,9 @@
-import { fetchWithToken, postWithToken, putWithToken } from "@/helper/api";
+import {
+  fetchNoToken,
+  fetchWithToken,
+  postWithToken,
+  putWithToken,
+} from "@/helper/api";
 import {
   FETCH_PAGES,
   FETCH_PAGES_FAILURE,
@@ -38,6 +43,25 @@ export const fetchPageDetail = (accessToken: any, id: string) => {
   return (dispatch: AppDispatch) => {
     dispatch({ type: FETCH_PAGE });
     fetchWithToken(page.pageDetail(id), accessToken)
+      .then((response) => {
+        dispatch({
+          type: FETCH_PAGE_SUCCESS,
+          payload: { data: response },
+        });
+      })
+      .catch((error) => {
+        dispatch({
+          type: FETCH_PAGES_FAILURE,
+          payload: { error: error.message },
+        });
+      });
+  };
+};
+
+export const fetchPageDetailClient = (id: string, code: string) => {
+  return (dispatch: AppDispatch) => {
+    dispatch({ type: FETCH_PAGE });
+    fetchNoToken(page.pageDetailClient(id, code))
       .then((response) => {
         dispatch({
           type: FETCH_PAGE_SUCCESS,

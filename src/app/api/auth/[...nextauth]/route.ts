@@ -28,16 +28,8 @@ const authOptions: AuthOptions = {
     CredentialsProvider({
       name: "Credentials",
       credentials: {
-        email: {
-          label: "Email",
-          type: "email",
-          placeholder: "you@example.com",
-        },
-        password: {
-          label: "Password",
-          type: "password",
-          placeholder: "Your password",
-        },
+        email: { label: "Email", type: "email" },
+        password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
         try {
@@ -63,7 +55,7 @@ const authOptions: AuthOptions = {
           return null;
         } catch (error) {
           console.error("Login error:", error);
-          return null;
+          throw error;
         }
       },
     }),
@@ -81,15 +73,13 @@ const authOptions: AuthOptions = {
         token.expiredAt = user.expiredAt;
       }
 
-      const shouldRefreshTime = Math.round(
-        token.expiredAt - 60 * 60 - Date.now() / 1000
-      );
+      const shouldRefreshTime = Math.round(token.expiredAt - 60 * 60 - Date.now() / 1000);
 
       if (shouldRefreshTime > 0) {
         return Promise.resolve(token);
       }
 
-      token = await refreshAccessToken(token); // Calling the refresh function
+      token = await refreshAccessToken(token);
       return Promise.resolve(token);
     },
 
