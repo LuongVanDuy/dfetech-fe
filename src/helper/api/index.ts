@@ -1,10 +1,6 @@
 import { ApiResponse } from "@/types";
 
-export async function fetchApi(
-  endpoint: string,
-  method: string,
-  body: any = null
-) {
+export async function fetchApi(endpoint: string, method: string, body: any = null) {
   const url = `${process.env.apiUrl}/${endpoint}`;
 
   const headers: { [key: string]: string } = {
@@ -20,7 +16,8 @@ export async function fetchApi(
   try {
     const response = await fetch(url, options);
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      const errorData = await response.json();
+      throw new Error(errorData?.message || `HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
     return data;
@@ -30,11 +27,7 @@ export async function fetchApi(
   }
 }
 
-export const fetchWithToken = async (
-  url: string,
-  token: string,
-  callback: ((data: ApiResponse) => void) | null = null
-): Promise<ApiResponse> => {
+export const fetchWithToken = async (url: string, token: string, callback: ((data: ApiResponse) => void) | null = null): Promise<ApiResponse> => {
   const response = await fetch(`${process.env.apiUrl}/${url}`, {
     method: "GET",
     headers: {
@@ -53,6 +46,28 @@ export const fetchWithToken = async (
   if (callback && typeof callback === "function") {
     callback(data);
   }
+  return data;
+};
+
+export const fetchNoToken = async (url: string, callback: ((data: ApiResponse) => void) | null = null): Promise<ApiResponse> => {
+  const response = await fetch(`${process.env.apiUrl}/${url}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    const errorMessage = errorData?.message || "Unknown error";
+    throw new Error(errorMessage);
+  }
+
+  const data = await response.json();
+  if (callback && typeof callback === "function") {
+    callback(data);
+  }
+
   return data;
 };
 
@@ -112,11 +127,7 @@ export const putWithToken = async (
   return data;
 };
 
-export const deleteWithToken = async (
-  url: string,
-  token: string,
-  callback: ((data: ApiResponse) => void) | null = null
-): Promise<ApiResponse> => {
+export const deleteWithToken = async (url: string, token: string, callback: ((data: ApiResponse) => void) | null = null): Promise<ApiResponse> => {
   const response = await fetch(`${process.env.apiUrl}/${url}`, {
     method: "DELETE",
     headers: {

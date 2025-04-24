@@ -1,18 +1,18 @@
 "use client";
 
-import LayoutAdmin from "@/components/layouts/admin/LayoutAdmin";
+import LayoutAdmin from "@/components/admin/layout/LayoutAdmin";
 import React, { useEffect, useState } from "react";
 import { Button, Space, Table, Tag, Typography } from "antd";
-import TopPage from "@/components/layouts/admin/TopPage";
+import TopPage from "@/components/admin/layout/TopPage";
 import { EditOutlined } from "@ant-design/icons";
 import { useRouter } from "next/navigation";
 import styled from "styled-components";
 import { connect } from "react-redux";
 import { fetchPageList } from "@/store/actions/page";
 import { useSession } from "next-auth/react";
-import { USIcon } from "@/components/icons/USIcon";
-import { VNIcon } from "@/components/icons/VNIcon";
-import { THIcon } from "@/components/icons/THIcon";
+import { USIcon } from "@/components/client/icons/USIcon";
+import { VNIcon } from "@/components/client/icons/VNIcon";
+import { THIcon } from "@/components/client/icons/THIcon";
 
 const iconMap: Record<string, JSX.Element> = {
   en: <USIcon />,

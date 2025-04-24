@@ -1,14 +1,16 @@
 "use client";
-import LayoutAdmin from "@/components/layouts/admin/LayoutAdmin";
-import TopPage from "@/components/layouts/admin/TopPage";
+import SoftwareSolutionBox from "@/components/admin/form/SoftwareSolutionBox";
+import LayoutAdmin from "@/components/admin/layout/LayoutAdmin";
+import TopPage from "@/components/admin/layout/TopPage";
 import { fetchPageDetail, updatePage } from "@/store/actions/page";
-import { Button, Card, Col, Form, Input, Row, Space } from "antd";
-import { data } from "framer-motion/client";
+import { Button, Card, Col, Collapse, Form, Input, Row, Space } from "antd";
 import { useSession } from "next-auth/react";
 import { useParams, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+
+const { Panel } = Collapse;
 
 const PageDetail = (props: any) => {
   const { loading, fetchPageDetail, pageDetail, updatePage, beforeUpload } =
@@ -37,6 +39,7 @@ const PageDetail = (props: any) => {
   useEffect(() => {
     if (pageDetail) {
       setFormField(pageDetail);
+      console.log(pageDetail);
     }
   }, [pageDetail]);
 
@@ -69,7 +72,7 @@ const PageDetail = (props: any) => {
         autoComplete="off"
       >
         <Row gutter={20}>
-          <Col xs={18} xl={18}>
+          <Col xs={24} xl={18}>
             <Form.Item<any>
               label="Title"
               name="title"
@@ -77,56 +80,153 @@ const PageDetail = (props: any) => {
             >
               <Input placeholder="Tên trang" />
             </Form.Item>
-            <Card title="Showcare Section" bordered={false}>
-              <Row gutter={20}>
-                <Col xs={24} xl={24}>
-                  <Form.Item
-                    label="Title"
-                    name={["content", "showcare", "title"]}
-                    rules={[
-                      { required: true, message: "Vui lòng nhập tiêu đề!" },
-                    ]}
-                  >
-                    <Input placeholder="Tiêu đề" />
-                  </Form.Item>
-                </Col>
-                <Col xs={24} xl={24}>
-                  <Form.Item
-                    label="Subtitle"
-                    name={["content", "showcare", "subtitle"]}
-                    rules={[
-                      { required: true, message: "Vui lòng nhập phụ đề!" },
-                    ]}
-                  >
-                    <Input placeholder="Phụ đề" />
-                  </Form.Item>
-                </Col>
-                <Col xs={24} xl={14}>
-                  <Form.Item
-                    label="Slogan"
-                    name={["content", "showcare", "slogan"]}
-                    rules={[
-                      { required: true, message: "Vui lòng nhập Slolan!" },
-                    ]}
-                  >
-                    <Input placeholder="Slolan" />
-                  </Form.Item>
-                </Col>
-                <Col xs={24} xl={10}>
-                  <Form.Item
-                    label="Author"
-                    name={["content", "showcare", "author"]}
-                    rules={[
-                      { required: true, message: "Vui lòng nhập Author!" },
-                    ]}
-                  >
-                    <Input placeholder="Author" />
-                  </Form.Item>
-                </Col>
-              </Row>
-            </Card>
+            <Collapse
+              defaultActiveKey={["1"]}
+              items={[
+                {
+                  key: "1",
+                  label: "Showcase",
+                  children: (
+                    <Row gutter={20}>
+                      <Col xs={24} sm={12} md={12} xl={12}>
+                        <Form.Item
+                          label="Main Title"
+                          name={["content", "showcare", "title"]}
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter the main title!",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Main title of the website or section" />
+                        </Form.Item>
+                      </Col>
+                      <Col xs={24} sm={12} md={12} xl={12}>
+                        <Form.Item
+                          label="Subtitle"
+                          name={["content", "showcare", "subtitle"]}
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter the subtitle!",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Short description about the content" />
+                        </Form.Item>
+                      </Col>
+                      <Col xs={24} sm={12} md={8} xl={8}>
+                        <Form.Item
+                          label="Slogan"
+                          name={["content", "showcare", "slogan"]}
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter the slogan!",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Short message, the slogan of the website" />
+                        </Form.Item>
+                      </Col>
+                      <Col xs={24} sm={12} md={8} xl={8}>
+                        <Form.Item
+                          label="Author"
+                          name={["content", "showcare", "author"]}
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter the author's name!",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Author or creator of the content" />
+                        </Form.Item>
+                      </Col>
+                      <Col xs={24} sm={12} md={8} xl={8}>
+                        <Form.Item
+                          label="Trusted Client"
+                          name={["content", "showcare", "trusted"]}
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter the trusted client name!",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Name of a trusted client" />
+                        </Form.Item>
+                      </Col>
+                    </Row>
+                  ),
+                },
+              ]}
+            />
+            {/* <Collapse
+              defaultActiveKey={["2"]}
+              items={[
+                {
+                  key: "2",
+                  label: "Showcase",
+                  children: (
+                    <Row gutter={20}>
+                      {["box_1", "box_2", "box_3", "box_4"].map(
+                        (box, index) => (
+                          <Col xs={24} sm={12} md={12} xl={12} key={index}>
+                            <Card
+                              title={`Box ${index + 1}`}
+                              style={{
+                                marginBottom: "20px",
+                              }}
+                            >
+                              <Form.Item
+                                label="Title"
+                                name={[
+                                  "content",
+                                  "software_solutions",
+                                  box,
+                                  "title",
+                                ]}
+                                rules={[
+                                  {
+                                    required: true,
+                                    message: "Please enter the main title!",
+                                  },
+                                ]}
+                              >
+                                <Input placeholder="Main title of the website or section" />
+                              </Form.Item>
+
+                              <Form.List
+                                name={[
+                                  "content",
+                                  "software_solutions",
+                                  box,
+                                  "links",
+                                ]}
+                                initialValue={[{}]}
+                              >
+                                {(fields, { add, remove }) => (
+                                  <SoftwareSolutionBox
+                                    namePrefix={box}
+                                    fields={fields}
+                                    add={add}
+                                    remove={remove}
+                                  />
+                                )}
+                              </Form.List>
+                            </Card>
+                          </Col>
+                        )
+                      )}
+                    </Row>
+                  ),
+                },
+              ]}
+            /> */}
           </Col>
-          <Col xs={6} xl={6}>
+          <Col xs={24} xl={6}>
             <Form.Item>
               <Button type="primary" htmlType="submit" loading={false}>
                 Lưu trữ

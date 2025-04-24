@@ -1,6 +1,6 @@
 "use client";
 
-import LayoutAdmin from "@/components/layouts/admin/LayoutAdmin";
+import LayoutAdmin from "@/components/admin/layout/LayoutAdmin";
 import React, { useState } from "react";
 import { Typography } from "antd";
 
