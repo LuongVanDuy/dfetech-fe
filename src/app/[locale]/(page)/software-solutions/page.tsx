@@ -1,5 +1,7 @@
-import { SoftwareSolutionPage } from "@/components/client/modules/software-solutions";
+"use client";
+
+import { SoftwareSolutionModule } from "@/components/modules/software-solutions";
 
 export default function SoftwareSolution() {
-  return <SoftwareSolutionPage />;
+  return <SoftwareSolutionModule />;
 }

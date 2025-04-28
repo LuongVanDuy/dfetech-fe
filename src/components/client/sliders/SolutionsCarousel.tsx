@@ -84,12 +84,7 @@ const SolutionsCarousel = () => {
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
-            <BoxSolution
-              imageUrl={item.imageUrl}
-              effect="zoom"
-              title={item.title}
-              link={item.link}
-            />
+            <BoxSolution imageUrl={item.imageUrl} effect="zoom" title={item.title} link={item.link} height="104%" />
           </SwiperSlide>
         ))}
       </Swiper>

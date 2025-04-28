@@ -1,4 +1,4 @@
-import { AnsysPage } from "@/components/client/modules/ansys";
+import { AnsysPage } from "@/components/modules/ansys";
 
 export default function Ansys() {
   return <AnsysPage />;

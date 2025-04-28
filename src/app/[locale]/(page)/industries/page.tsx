@@ -1,4 +1,4 @@
-import { IndustriesPage } from "@/components/client/modules/industries";
+import { IndustriesPage } from "@/components/modules/industries";
 
 export default function Service() {
   return <IndustriesPage />;
