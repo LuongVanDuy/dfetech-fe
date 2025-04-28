@@ -4,6 +4,8 @@ import { Plus_Jakarta_Sans, Teko } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
 import ClientProviders from "@/components/client/layout/ClientProviders";
+import DefaultLayout from "@/components/client/layout/DefaultLayout";
+import Image from "next/image";
 
 const jakartaFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -20,25 +22,25 @@ const tekoFont = Teko({
   display: "swap",
 });
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+export default async function RootLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
   const { locale } = params;
   const locales = Array.from(routing.locales);
   if (!hasLocale(locales, locale)) {
     notFound();
   }
   return (
-    <html
-      lang={locale}
-      className={`${jakartaFont.variable} ${tekoFont.variable}`}
-    >
+    <html lang={locale} className={`${jakartaFont.variable} ${tekoFont.variable}`}>
       <body className="antialiased">
-        <ClientProviders>{children}</ClientProviders>
+        <ClientProviders>
+          <DefaultLayout>
+            <div className="fixed top-0 left-0 w-full h-full mix-blend-lighten">
+              <div className="relative aspect-[440/1174] md:aspect-[1920/980] w-full h-auto max-h-screen">
+                <Image src="/home/view-3d-car-model-2.svg" alt="background" layout="fill" objectFit="cover" className="absolute inset-0" />
+              </div>
+            </div>
+            {children}
+          </DefaultLayout>
+        </ClientProviders>
       </body>
     </html>
   );

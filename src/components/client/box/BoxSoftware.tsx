@@ -27,25 +27,16 @@ const BoxSoftware: React.FC<BoxSoftwareProps> = ({
   description = "",
 }) => {
   return (
-    <div
-      className="relative mx-auto overflow-hidden rounded-xl shadow-lg w-full"
-      style={{ height }} // Optional override for custom height
-    >
+    <div className="relative mx-auto overflow-hidden rounded-xl shadow-lg w-full" style={{ height }}>
       <div className="relative group h-full">
-        {/* Aspect Ratio Container */}
-        <div
-          className="relative w-full pb-[53.33%]"
-          style={{ aspectRatio: "15 / 8" }}
-        >
+        <div className="relative w-full pb-[53.33%]" style={{ aspectRatio: "15 / 8" }}>
           <Link href={linkUrl} className="block absolute inset-0">
             <Image
               src={imageUrl}
               alt={altText}
               width={1500}
               height={800}
-              className={`object-cover w-full h-full transition-transform duration-300 ${
-                effect === "zoom" ? "group-hover:scale-110" : ""
-              }`}
+              className={`object-cover w-full h-full transition-transform duration-300 ${effect === "zoom" ? "group-hover:scale-110" : ""}`}
               priority={true}
             />
           </Link>
@@ -53,14 +44,9 @@ const BoxSoftware: React.FC<BoxSoftwareProps> = ({
           <div>
             <div
               className={`absolute flex flex-col gap-5 bottom-[50px] left-[50px] 
-                    text-white ${
-                      type === "large" ? "w-2/5" : "group-hover:hidden "
-                    }`}
+                    text-white ${type === "large" ? "w-2/5" : "group-hover:hidden "}`}
             >
-              <h3 className=" text-5xl leading-[38px] font-medium ">
-                {" "}
-                {title}
-              </h3>
+              <h3 className=" text-5xl leading-[38px] font-medium "> {title}</h3>
               {type === "large" && (
                 <>
                   <p className="text-lg opacity-80">{description}</p>

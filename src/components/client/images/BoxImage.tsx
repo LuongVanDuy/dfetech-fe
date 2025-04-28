@@ -7,17 +7,15 @@ interface BoxImageProps {
   linkUrl?: string;
   altText?: string;
   effect?: "zoom" | "none";
+  rounded?: string;
 }
 
-const BoxImage: React.FC<BoxImageProps> = ({
-  imageUrl,
-  height = "100%",
-  linkUrl = "",
-  altText = "Image",
-  effect = "none",
-}) => {
+const BoxImage: React.FC<BoxImageProps> = ({ imageUrl, height = "100%", linkUrl = "", altText = "Image", effect = "none", rounded = "" }) => {
   return (
-    <div className="h-auto mx-auto overflow-hidden relative">
+    <div
+      className={`h-auto mx-auto overflow-hidden relative                         
+            ${rounded ? `rounded-${rounded}` : ""} `}
+    >
       <div
         className={`bg-center bg-cover h-auto overflow-hidden relative transition-transform duration-300 ${
           effect === "zoom" ? "hover:scale-[1.2]" : ""
@@ -25,13 +23,7 @@ const BoxImage: React.FC<BoxImageProps> = ({
         style={{ paddingTop: height }}
       >
         <a href={linkUrl} className="absolute inset-0">
-          <Image
-            src={imageUrl}
-            alt={altText}
-            layout="fill"
-            objectFit="cover"
-            className="absolute inset-0"
-          />
+          <Image src={imageUrl} alt={altText} layout="fill" objectFit="cover" className="absolute inset-0" />
         </a>
       </div>
     </div>

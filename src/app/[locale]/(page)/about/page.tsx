@@ -1,4 +1,4 @@
-import { AboutPage } from "@/components/client/modules/about";
+import { AboutPage } from "@/components/modules/about";
 
 export default function About() {
   return <AboutPage />;
