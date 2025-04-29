@@ -50,7 +50,8 @@ const BoxSolution: React.FC<BoxSolutionProps> = ({
             className={`absolute bottom-[64px] left-[64px] ${large ? "" : "group-hover:hidden"}`}
             style={large ? { maxWidth: "calc(50% - 112px)" } : {}}
           >
-            <h3 className="text-[32px] leading-[38px] font-medium text-white uppercase mb-[16px]">{title}</h3>
+            <h3 className="text-[32px] leading-[38px] font-medium text-white uppercase mb-[16px] ">{title}</h3>
+
             {large && content && (
               <>
                 <p className="font-normal text-[18px] leading-[26px] tracking-[0%] mb-[36px] text-[#fff]">{content}</p>
@@ -64,12 +65,21 @@ const BoxSolution: React.FC<BoxSolutionProps> = ({
             bg-[#0B0E1599] transition-all duration-300 transform translate-y-[16px] opacity-0 pointer-events-none group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto border border-solid border-[#FFFFFF0D]`}
           >
             <div className={`flex flex-col gap-[18px] ${large ? "p-[48px]" : "p-[24px]"}`}>
-              {!large && <h3 className="text-[24px] font-medium text-white uppercase">{title}</h3>}
+              {!large && (
+                <h3 className="text-[24px] font-medium text-white uppercase">
+                  <Link href={"#"} className="flex justify-between items-center ">
+                    <span>{title}</span>
+                    <ArrowUpRightIcon className="w-[34px] h-[34px] text-white" />
+                  </Link>
+                </h3>
+              )}
               {link?.map((item: any, index: number) => (
                 <Link
                   key={index}
                   href={item?.href}
-                  className={`${large ? "flex items-center gap-[8px] font-[500] text-[24px] leading-[28.8px] text-[#fff]" : "text-[#22AB42]"}`}
+                  className={`${
+                    large ? "flex items-center gap-[8px] font-[500] text-[24px] leading-[28.8px] text-[#fff]" : "text-[#22AB42]"
+                  }  hover:transform hover:translate-x-2 transition-transform duration-300`}
                 >
                   {large && <ArrowUpRightIcon />}
                   {item?.name}
