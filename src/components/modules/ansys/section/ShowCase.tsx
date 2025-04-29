@@ -8,9 +8,9 @@ const ShowCase = (props: any) => {
   const { content } = props;
   return (
     <section>
-      <div className="relative w-full">
+      <div className="relative w-full pb-[175px]">
         <div>
-          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px]">
+          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px] z-[1] ">
             <div className="flex flex-col items-center gap-[16px]">
               <Image alt="logo" width={253} height={80} src={"/home/Ansys-logo.png"} />
               <p className="text-lg opacity-70 mb-5 max-w-[700px] text-center">
@@ -28,7 +28,7 @@ const ShowCase = (props: any) => {
             <div className="flex flex-col md:flex-row">
               {/* Khối text - 66% */}
               <div className="md:basis-[66%] flex flex-col gap-[24px] pt-[120px] pr-[64px] pb-[64px] pl-[64px]">
-                <h2 className="text-4xl">
+                <h2 className="text-[32px] font-medium leading-[38px]">
                   DFETECH is a tier-1 partner of ANSYS, specializing in providing advanced engineering simulation solutions for various industries.
                 </h2>
                 <p className="text-lg opacity-70">

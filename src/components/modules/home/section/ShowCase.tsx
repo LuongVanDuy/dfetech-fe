@@ -10,7 +10,7 @@ const ShowCase = (props: any) => {
     <section>
       <div className="relative w-full">
         <div>
-          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px]">
+          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px] z-[1]">
             <div className="flex flex-col items-center gap-[16px]">
               <h2 className="font-teko font-[var(--font-teko)] text-[68px] leading-[72px] md:text-[80px] md:leading-[84px] font-medium tracking-normal text-center uppercase">
                 Dyna Forming Engineering <br /> & Technology
@@ -21,7 +21,7 @@ const ShowCase = (props: any) => {
             </div>
           </div>
 
-          <Image src="/home/view-3d-car-model.svg" width={1920} height={1385} alt="Home Background" className="relative mix-blend-lighten w-full" />
+          <Image src="/home/view-3d-car-model.svg" width={1920} height={1302} alt="Home Background" className="relative mix-blend-lighten w-full" />
         </div>
 
         <div className="relative xl:absolute xl:block bottom-0 text-white w-full flex justify-center bg-[#0B0E1566] backdrop-blur-[15px]">

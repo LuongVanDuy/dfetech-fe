@@ -10,7 +10,7 @@ const ShowCase = (props: any) => {
     <section>
       <div className="relative w-full">
         <div>
-          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px]">
+          <div className="relative xl:absolute xl:block top-[0] text-white w-full flex justify-center pt-[156px] z-[1]">
             <div className="flex flex-col items-center gap-[16px]">
               <h2 className="font-teko font-[var(--font-teko)] text-[68px] leading-[72px] md:text-[80px] md:leading-[84px] font-medium tracking-normal text-center uppercase">
                 Software Solutions
