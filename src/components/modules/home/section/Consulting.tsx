@@ -15,14 +15,14 @@ const consultingData1 = {
   imageAlt: "Consulting Image 1",
   text: "Sheet Stamping Engineering",
   listItems: [
-    "Draw Die Development and Simulation",
-    "Design of Progressive and Transfer Dies",
-    "Die Structure Designs and Analysis",
-    "Die Process Design",
-    "Blank Size Estimation and Cost Analysis",
-    "Spring back Estimation and Compensation",
-    "Tubular Bending and Hydroforming",
-    "Formability Engineering Analysis",
+    { label: "Draw Die Development and Simulation", href: "/consulting/sheet-stamping/draw-die" },
+    { label: "Design of Progressive and Transfer Dies", href: "/consulting/sheet-stamping/progressive-transfer" },
+    { label: "Die Structure Designs and Analysis", href: "/consulting/sheet-stamping/structure-design" },
+    { label: "Die Process Design", href: "/consulting/sheet-stamping/process-design" },
+    { label: "Blank Size Estimation and Cost Analysis", href: "/consulting/sheet-stamping/blank-cost" },
+    { label: "Spring back Estimation and Compensation", href: "/consulting/sheet-stamping/springback" },
+    { label: "Tubular Bending and Hydroforming", href: "/consulting/sheet-stamping/hydroforming" },
+    { label: "Formability Engineering Analysis", href: "/consulting/sheet-stamping/formability" },
   ],
 };
 
@@ -31,23 +31,20 @@ const consultingData2 = {
   imageAlt: "Consulting Image 2",
   text: "Advanced CAE Analysis",
   listItems: [
-    "Draw Die Development and Simulation",
-    "Design of Progressive and Transfer Dies",
-    "Die Structure Designs and Analysis",
-    "Die Process Design",
-    "Blank Size Estimation and Cost Analysis",
-    "Spring back Estimation and Compensation",
-    "Tubular Bending and Hydroforming",
-    "Formability Engineering Analysis",
+    { label: "Draw Die Development and Simulation", href: "/consulting/cae/draw-die" },
+    { label: "Design of Progressive and Transfer Dies", href: "/consulting/cae/progressive-transfer" },
+    { label: "Die Structure Designs and Analysis", href: "/consulting/cae/structure-design" },
+    { label: "Die Process Design", href: "/consulting/cae/process-design" },
+    { label: "Blank Size Estimation and Cost Analysis", href: "/consulting/cae/blank-cost" },
+    { label: "Spring back Estimation and Compensation", href: "/consulting/cae/springback" },
+    { label: "Tubular Bending and Hydroforming", href: "/consulting/cae/hydroforming" },
+    { label: "Formability Engineering Analysis", href: "/consulting/cae/formability" },
   ],
 };
 
 const Consulting = (props: any) => {
   return (
-    <section
-      className="bg-[rgba(255,255,255,0.03)] backdrop-blur-[48px]"
-      id="consulting"
-    >
+    <section className="bg-[rgba(255,255,255,0.03)] backdrop-blur-[48px]" id="consulting">
       <Container>
         <MainTitle
           className="px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[15px]"
