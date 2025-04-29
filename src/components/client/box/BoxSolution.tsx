@@ -79,7 +79,7 @@ const BoxSolution: React.FC<BoxSolutionProps> = ({
                   href={item?.href}
                   className={`${
                     large ? "flex items-center gap-[8px] font-[500] text-[24px] leading-[28.8px] text-[#fff]" : "text-[#22AB42]"
-                  }  hover:transform hover:translate-x-2 transition-transform duration-300`}
+                  } hover:text-[#22AB42] hover:transform hover:translate-x-2 transition-transform duration-300`}
                 >
                   {large && <ArrowUpRightIcon />}
                   {item?.name}
