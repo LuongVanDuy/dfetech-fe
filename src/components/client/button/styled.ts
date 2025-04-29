@@ -9,11 +9,17 @@ export const ButtonStyled = styled.div`
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    background: var(--color-bg-bg-dark, rgba(11, 14, 21, 1));
+    background: rgba(11, 14, 21, 1);
     color: rgba(240, 255, 250, 1);
     border: none;
     cursor: pointer;
     box-shadow: 0px 0px 12px 0px #ffffff14 inset;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    box-shadow: 0px 0px 0px 1px rgba(155, 224, 118, 1), 0px 0px 12px 0px rgba(120, 207, 76, 0.4);
+    color: #9be076;
   }
 
   button::before {
