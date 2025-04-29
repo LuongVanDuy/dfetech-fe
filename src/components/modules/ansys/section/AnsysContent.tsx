@@ -33,7 +33,7 @@ const newsData = [
 
 const AnsysContent = (props: any) => {
   return (
-    <section>
+    <section className="bg-[#0B0E1566] backdrop-blur-[15px]">
       <Container>
         <div className="flex flex-col gap-5 px-[16px] md:px-[64px] py-[36px] md:py-[80px] md:pb-[64px] bg-[rgba(255,255,255,0.02)]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[64px]">
