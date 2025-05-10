@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "../../client/layout/Container";
 import { USIcon } from "@/components/client/icons/USIcon";
+import LanguageDropdown from "../LanguageDropdown";
+import { useParams } from "next/navigation";
 
 export default function Header() {
   const menuHeader = [
@@ -17,6 +19,7 @@ export default function Header() {
     { name: "Services", href: "/services" },
     { name: "News & Events", href: "/news-events" },
   ];
+  const params = useParams();
 
   return (
     <header id="header">
@@ -52,7 +55,9 @@ export default function Header() {
 
             <div className="flex items-center gap-5">
               <SearchIcon />
-              <USIcon />
+              <LanguageDropdown 
+                defaultLanguage={typeof params.locale === "string" ? params.locale : "en"}
+              />
 
               <CustomButton>Contact Us</CustomButton>
             </div>
