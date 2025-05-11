@@ -12,7 +12,7 @@ interface SocialNavProps {
 
 const SocialNav: React.FC<SocialNavProps> = ({ socials }) => {
   return (
-    <div className="fixed top-[50%] transform -translate-y-1/2 right-[0px] z-[999] hidden md:block border-t-[1px] border-b-[1px] border-l-[1px] p-[24px] rounded-tl-[24px] rounded-bl-[24px] border-solid border-[rgba(255,255,255,0.05)]">
+    <div className="bg-[#0B0E154D] fixed top-[50%] transform -translate-y-1/2 right-[0px] z-[999] hidden md:block border-t-[1px] border-b-[1px] border-l-[1px] p-[24px] rounded-tl-[24px] rounded-bl-[24px] border-solid border-[rgba(255,255,255,0.05)]">
       {socials.map((social) => (
         <div
           key={social.name}
