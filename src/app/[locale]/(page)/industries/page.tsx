@@ -1,5 +1,6 @@
+import DefaultLayout from "@/components/client/layout/DefaultLayout";
 import { IndustriesPage } from "@/components/modules/industries";
 
 export default function Service() {
-  return <IndustriesPage />;
+  return <DefaultLayout><IndustriesPage /></DefaultLayout>;
 }

@@ -5,7 +5,6 @@ import { MinusIcon } from "@/components/client/icons/MinusIcon";
 import { PlusIcon } from "@/components/client/icons/PlusIcon";
 import { TickIcon } from "@/components/client/icons/TickIcon";
 import Container from "@/components/client/layout/Container";
-import DefaultLayout from "@/components/layouts/clients/DefaultLayout";
 import ProductLayout from "@/components/client/layout/ProductLayout";
 import Image from "next/image";
 import Link from "next/link";
