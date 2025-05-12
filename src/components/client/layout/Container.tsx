@@ -1,14 +1,18 @@
+import classNames from "classnames";
+
 interface ContainerProps {
   children: React.ReactNode;
   fullWidth?: boolean;
+  className?: string;
 }
 
 const Container: React.FC<ContainerProps> = ({
   children,
   fullWidth = false,
+  className = ""
 }) => {
   return (
-    <div className={`${fullWidth ? "w-full" : "container"}`}>{children}</div>
+    <div className={classNames(`${fullWidth ? "w-full" : "container"}`, className)}>{children}</div>
   );
 };
 

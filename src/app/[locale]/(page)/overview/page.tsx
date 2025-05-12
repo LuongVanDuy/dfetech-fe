@@ -8,6 +8,7 @@ import { TickIcon } from "@/components/client/icons/TickIcon";
 import Container from "@/components/client/layout/Container";
 import DefaultLayout from "@/components/client/layout/DefaultLayout";
 import ProductLayout from "@/components/client/layout/ProductLayout";
+import ProductTabs from "@/components/client/layout/ProductTabs/ProductTabs";
 import OverViewModule from "@/components/modules/overview";
 import Image from "next/image";
 import Link from "next/link";

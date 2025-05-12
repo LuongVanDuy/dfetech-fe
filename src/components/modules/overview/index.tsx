@@ -4,6 +4,7 @@ import Image from "next/image";
 import CustomButton from "@/components/client/button";
 import { Contact } from "../home/section/Contact";
 import SectionTabs from "./components/SectionTabs";
+import ProductTabs from "@/components/client/layout/ProductTabs/ProductTabs";
 
 const OverViewModule = () => {
     const localize = useLocalizeOverview();
@@ -42,6 +43,7 @@ const OverViewModule = () => {
                 </div>
             </div>
         </section>
+        <ProductTabs />
         <SectionTabs />
         <Contact />
     </div>
