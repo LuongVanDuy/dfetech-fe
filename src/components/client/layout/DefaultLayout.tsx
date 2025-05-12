@@ -1,7 +1,9 @@
-import { PropsWithChildren } from "react";
+"use client";
+
+import { PropsWithChildren, useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import { Global } from "@emotion/react";
+// import { Global } from "@emotion/react";
 
 export type DefaultLayoutProps = PropsWithChildren & { 
   disableImageBackground?: boolean,
@@ -9,13 +11,23 @@ export type DefaultLayoutProps = PropsWithChildren & {
 };
 
 export default function DefaultLayout({ children, disableImageBackground, backgroundBody }: DefaultLayoutProps) {
+
+  useEffect(() => {
+    if (backgroundBody) {
+      document.body.style.background = backgroundBody;
+    }
+    return () => {
+      document.body.style.background = '';
+    };
+  }, [backgroundBody]);
+
   return (
     <div id="wrapper">
-      <Global styles={`
+      {/* <Global styles={`
         body {
           ${backgroundBody ? `background: ${backgroundBody}` : ""};
         }
-      `} />
+      `} /> */}
       <Header />
       <main id="main">
         {!disableImageBackground && <div className="fixed top-0 left-0 mix-blend-lighten">
