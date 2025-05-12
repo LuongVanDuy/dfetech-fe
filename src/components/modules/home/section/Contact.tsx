@@ -27,7 +27,7 @@ const Contact = (props: any) => {
                 aria-label="country"
                 required
                 className="w-full border-b-[2px] border-[#333333] pb-2  pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 appearance-none cursor-pointer"
+      peer-invalid:border-red-500 appearance-none cursor-pointer peer"
               >
                 <option value="" hidden></option>
                 <option value="us">Salutation 1</option>
@@ -39,12 +39,12 @@ const Contact = (props: any) => {
       peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
       peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
       peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+      pointer-events-none cursor-pointer peer-hover:text-white"
               >
                 Salutation *
               </label>
-              <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
-                <DropDownIcon />
+              <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none stroke-[#6C757D] peer-hover:stroke-white">
+                <DropDownIcon classNamePath="stroke-inherit" className="stroke-inherit" />
               </span>
             </div>
 
@@ -58,16 +58,19 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=" "
                   className="w-full border-b pb-1 cursor-pointer border-[#333333] bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500"
+                    peer-invalid:border-red-500
+                  "
                 />
 
                 <label
                   htmlFor="first_name"
                   className="absolute  font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    pointer-events-none cursor-pointer
+                    peer-hover:text-white
+                  "
                 >
                   First name *
                 </label>
@@ -82,15 +85,18 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=""
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                    peer-invalid:border-red-500 cursor-pointer
+                  "
                 />
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    pointer-events-none cursor-pointer
+                    peer-hover:text-white
+                  "
                 >
                   Last name *
                 </label>
@@ -106,15 +112,18 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=""
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                    peer-invalid:border-red-500 cursor-pointer
+                  "
                 />
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    pointer-events-none cursor-pointer
+                    peer-hover:text-white
+                  "
                 >
                   Email address *
                 </label>
@@ -129,15 +138,18 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=""
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                    peer-invalid:border-red-500 cursor-pointer
+                  "
                 />
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    pointer-events-none cursor-pointer
+                    peer-hover:text-white
+                  "
                 >
                   Contact number *
                 </label>
@@ -153,15 +165,18 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=" "
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                  peer-invalid:border-red-500 cursor-pointer
+                "
                 />
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                  peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                  pointer-events-none cursor-pointer
+                  peer-hover:text-white
+                "
                 >
                   Organization *
                 </label>
@@ -173,7 +188,8 @@ const Contact = (props: any) => {
                   aria-label="job"
                   required
                   className="w-full border-b-[2px] border-[#333333] pb-1  pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 appearance-none cursor-pointer"
+                  peer-invalid:border-red-500 appearance-none cursor-pointer
+                "
                   defaultValue=""
                 >
                   <option value=""></option>
@@ -184,15 +200,17 @@ const Contact = (props: any) => {
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                  pointer-events-none cursor-pointer
+                  peer-hover:text-white
+                  "
                 >
                   Job Level *
                 </label>
 
-                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
-                  <DropDownIcon />
+                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none stroke-[#6C757D] peer-hover:stroke-white">
+                  <DropDownIcon classNamePath="stroke-inherit" className="stroke-inherit" />
                 </span>
               </div>
             </div>
@@ -203,7 +221,8 @@ const Contact = (props: any) => {
                   aria-label="job"
                   required
                   className="w-full border-b-[2px] border-[#333333] pb-2  pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 appearance-none cursor-pointer"
+                    peer-invalid:border-red-500 appearance-none cursor-pointer
+                  "
                   defaultValue=""
                 >
                   <option value="" disabled hidden></option>
@@ -213,14 +232,15 @@ const Contact = (props: any) => {
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                  peer-hover:text-white
+                  pointer-events-none cursor-pointer"
                 >
                   Are you a Student? *
                 </label>
-                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
-                  <DropDownIcon />
+                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none stroke-[#6C757D] peer-hover:stroke-white">
+                  <DropDownIcon classNamePath="stroke-inherit" className="stroke-inherit" />
                 </span>
               </div>
 
@@ -230,7 +250,8 @@ const Contact = (props: any) => {
                   aria-label="country"
                   required
                   className="w-full border-b-[2px] border-[#333333] pb-2  pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 appearance-none cursor-pointer"
+                  peer-invalid:border-red-500 appearance-none cursor-pointer
+                "
                   defaultValue=""
                 >
                   <option value=""></option>
@@ -241,14 +262,16 @@ const Contact = (props: any) => {
 
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    peer-hover:text-white
+                    pointer-events-none cursor-pointer
+                  "
                 >
                   Country/Region *
                 </label>
-                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
-                  <DropDownIcon />
+                <span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none stroke-[#6C757D] peer-hover:stroke-white">
+                  <DropDownIcon classNamePath="stroke-inherit" className="stroke-inherit" />
                 </span>
               </div>
             </div>
@@ -262,14 +285,17 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=" "
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                  peer-invalid:border-red-500 cursor-pointer
+                "
                 />
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    pointer-events-none cursor-pointer
+                    peer-hover:text-white
+                  "
                 >
                   City *
                 </label>
@@ -284,14 +310,17 @@ const Contact = (props: any) => {
                   autoComplete="off"
                   placeholder=" "
                   className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                  peer-invalid:border-red-500 cursor-pointer
+                "
                 />
                 <label
                   className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                    peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                    peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                    peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                    pointer-events-none cursor-pointer
+                    peer-hover:text-white
+                  "
                 >
                   PostalCode *
                 </label>
@@ -306,14 +335,17 @@ const Contact = (props: any) => {
                 autoComplete="off"
                 placeholder=""
                 className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                  peer-invalid:border-red-500 cursor-pointer
+                "
               />
               <label
                 className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                  peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                  pointer-events-none cursor-pointer
+                  peer-hover:text-white
+                "
               >
                 Subject *
               </label>
@@ -326,15 +358,18 @@ const Contact = (props: any) => {
                 autoComplete="off"
                 placeholder=""
                 className="w-full border-b border-[#333333] pb-1 bg-transparent pt-4 outline-none peer resize-none text-white
-      peer-invalid:border-red-500 cursor-pointer"
+                  peer-invalid:border-red-500 cursor-pointer
+                "
                 rows={5}
               ></textarea>
               <label
                 className="absolute font-[300] left-0 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-300
-      peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
-      peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
-      peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
-      pointer-events-none cursor-pointer"
+                  peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-gray-500
+                  peer-focus:top-0 peer-focus:text-[15px] peer-focus:text-white
+                  peer-valid:top-0 peer-valid:text-[15px] peer-valid:text-white
+                  pointer-events-none cursor-pointer
+                  peer-hover:text-white
+                "
               >
                 Message *
               </label>

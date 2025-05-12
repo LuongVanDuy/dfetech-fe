@@ -27,17 +27,24 @@ const BoxNormal: React.FC<BoxNormalProps> = ({ title, date, imageSrc, descriptio
           </CustomButton>
         )}
         <p className="text-sm text-green-600">{date}</p>
-        <div className="flex  justify-between cursor-pointer gap-[16px]">
+        <div className="group flex justify-between cursor-pointer gap-[16px]">
           <h3 className={`font-[600] text-[#212529] ${type === "large" ? "text-[32px] leading-[38px]" : "text-[24px] leading-[28.8px]"}`}>
             <a
               href=""
-              className={`${postType === "ansys" ? "text-[#fff]" : "text-[#212529]"} hover:text-[rgba(44,118,86,1)] transition-colors duration-300`}
+              className={`
+                ${postType === "ansys" ? "text-[#fff]" : "text-[#212529]"} 
+                group-hover:text-[rgba(44,118,86,1)] transition-colors duration-300
+                `}
             >
               {title}
             </a>
           </h3>
           <MoreIcon
-            className="cursor-pointer"
+            className="
+            cursor-pointer
+            group-hover:fill-[rgba(44,118,86,1)]
+            "
+            classNamePath="group-hover:stroke-[rgba(44,118,86,1)]"
             fill={postType === "ansys" ? "#2C7656" : "#101828"}
             width={postType === "ansys" ? 20 : 13}
             height={postType === "ansys" ? 20 : 12}

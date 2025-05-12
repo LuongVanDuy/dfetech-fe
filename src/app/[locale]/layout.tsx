@@ -32,12 +32,7 @@ export default async function RootLayout({ children, params }: { children: React
     <html lang={locale} className={`${jakartaFont.variable} ${tekoFont.variable}`}>
       <body className="antialiased">
         <ClientProviders>
-          <DefaultLayout>
-            <div className="fixed top-0 left-0 mix-blend-lighten">
-              <img src="/home/image-bg.png" alt="" />
-            </div>
-            {children}
-          </DefaultLayout>
+          {children}
         </ClientProviders>
       </body>
     </html>

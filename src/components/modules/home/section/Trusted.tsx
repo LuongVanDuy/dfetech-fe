@@ -23,7 +23,7 @@ const Trusted = (props: any) => {
       <Container>
         <div className="px-[16px] md:px-[64px] py-[36px] md:py-[64px] md:pb-[64px]">
           <h2 className="text-center lg:text-[32px] sm:text-[24px] text-[#ADB5BD] md:mb-[64px] sm:mb-[40px]">
-            We are Trusted 15+ Countries Worldwide
+            Trusted by 15+ countries worldwide
           </h2>
           <div className="grid grid-cols-3 md:gap-8 sm:gap-1">
             <div className="p-4 background-trusted text-center rounded-lg bg-gradient-radial from-green-500/80 to-green-900">

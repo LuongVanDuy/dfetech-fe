@@ -1,0 +1,38 @@
+.language-dropdown-overlay .ant-dropdown-menu {
+    border-radius: 8px !important;
+    width: 165px;
+    background-color: #0B0E1599 !important;
+    padding: 0 !important;
+}
+
+.language-dropdown-overlay .ant-dropdown-menu-item {
+    background: #1e5d31 !important;
+    padding: 12px 16px !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+
+    &:hover {
+        background: #112a20 !important;
+    }
+
+    &:not(&:last-child) {
+        border-bottom: 1px solid #FFFFFF0D;
+    }
+}
+
+.language-option { 
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    
+    .language-label { 
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.language-flag { 
+    border: 2.47px solid var(--color-border-border-dark, #FFFFFF0D) !important;
+}
+  

@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { fetchPageDetailClient } from "@/store/actions/page";
 import { useEffect } from "react";
 import { HomeModule } from "@/components/modules/home";
+import DefaultLayout from "@/components/client/layout/DefaultLayout";
 
 const HomePage = (props: any) => {
   const { loading, fetchPageDetail, pageDetail } = props;
@@ -13,7 +14,7 @@ const HomePage = (props: any) => {
     fetchPageDetail(slug, "en");
   }, [fetchPageDetail]);
 
-  return <HomeModule />;
+  return <DefaultLayout><HomeModule /></DefaultLayout>;
 };
 
 const mapStateToProps = (state: any) => ({

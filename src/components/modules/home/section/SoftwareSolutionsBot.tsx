@@ -9,7 +9,8 @@ import MainTitle from "@/components/client/title/MainTitle";
 
 const SoftwareSolutionsBot = (props: any) => {
   return (
-    <section className="bg-gradient-to-b from-[#0E1C1D] to-[#0B1115] backdrop-blur-[48px]">
+    // <section className="bg-gradient-to-b from-[#0E1C1D] to-[#0B1115] backdrop-blur-[48px]">
+    <section className="bg-[#0B0E15]">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 text-white">
           <div className="order-last md:order-first flex justify-center items-center  px-[16px] py-[48px] md:px-[64px] md:py-[64px]">

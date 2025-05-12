@@ -3,6 +3,7 @@ interface Props {
   width?: number;
   height?: number;
   fill?: string;
+  classNamePath?: string;
 }
 
 const MoreIcon: React.FC<Props> = ({
@@ -10,6 +11,7 @@ const MoreIcon: React.FC<Props> = ({
   width = 13,
   height = 12,
   fill = "#101828",
+  classNamePath=""
 }) => {
   return (
     <svg
@@ -26,6 +28,7 @@ const MoreIcon: React.FC<Props> = ({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        className={classNamePath}
       />
     </svg>
   );

@@ -11,7 +11,7 @@ const SoftwareSolutionTop = (props: any) => {
     >
       <Container>
         <MainTitle
-          className="flex justify-between px-[16px] md:px-[64px] py-[36px] pb-[12px] md:py-[80px] md:pb-[56px] hide-bt"
+          className="flex justify-between px-[16px] md:px-[64px] py-[36px] pb-[12px] md:py-[80px] md:pb-[56px]"
           title="Software Solutions"
           link="#"
           linktext="See all →"
